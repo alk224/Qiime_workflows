@@ -385,7 +385,8 @@ split_libraries_fastq.py -i rd.fq -b idx.fq -m $map -o $outdir/split_libraries -
 
 	`split_libraries_fastq.py -i rd.fq -b idx.fq -m $map -o $outdir/split_libraries -q $qual --barcode_type $barcodetype`	
 	
-	echo "		Split libraries command completed."
+	echo "		Split libraries command completed.
+	"
 
 	echo "
 Split libraries command completed." >> $log
@@ -411,7 +412,7 @@ Split libraries command completed." >> $log
 
 	if [[ ! -f $outdir/split_libraries/seqs_chimera_filtered.fna ]]; then
 
-	echo "		Beginning chimera filtering 
+	echo "		Beginning chimera filtering.
 		(Method: usearch61)
 		(Reference: $chimera_refs)
 "
@@ -457,8 +458,7 @@ filter_fasta.py -f $outdir/split_libraries/seqs.fna -o $outdir/split_libraries/s
 
 	if [[ `ls $param_file | wc -w` == 1 ]]; then
 
-	echo "
-		Picking open reference OTUs.  Passing in parameters file
+	echo "		Picking open reference OTUs.  Passing in parameters file
 		($param_file) to modify default settings
 	"
 	cat $param_file
@@ -525,16 +525,25 @@ pick_rep_set.py	-i $outdir/uclust_otu_picking/final_otu_map.txt -f $seqs -o $out
 	"
 	fi
 
-## Align sequences
+## Align sequences (16S mode)
 
-#	if [[ $mode == "16S" ]]; then
+	if [[ $mode == "16S" ]]; then
 
-#	echo "		Aligning sequences.
-#	"
-#	`parallel_align_seqs_pynast.py -i $outdir/open_reference_output/final_rep_set.fna -o $outdir/open_reference_output/pynast_aligned_seqs -t $alignment_template -O $alignseqs_threads`
+	if [[ ! -f $outdir/open_reference_output/pynast_aligned_seqs/final_rep_set_aligned.fasta ]]; then
 
-#	fi
+	echo "		Aligning sequences.
+		(Method: pynast on $alignseqs_threads cores)
+	"
+	`parallel_align_seqs_pynast.py -i $outdir/open_reference_output/final_rep_set.fna -o $outdir/open_reference_output/pynast_aligned_seqs -t $alignment_template -O $alignseqs_threads`
+	wait
 
+	else	
+	echo "		Alignment file detected.
+		($outdir/open_reference_output/final_rep_set.fna)
+		Skipping sequence alignment step.
+	"
+	fi
+	fi
 ## Assign taxonomy (RDP)
 
 

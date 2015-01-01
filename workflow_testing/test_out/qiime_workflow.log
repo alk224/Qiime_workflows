@@ -29,3 +29,87 @@ pick_open_reference_otus.py -i test_out/split_libraries/seqs_chimera_filtered.fn
 Pick representative sequences command as issued:
 pick_rep_set.py	-i test_out/uclust_otu_picking/final_otu_map.txt -f test_out/split_libraries/seqs_chimera_filtered.fna -o test_out/uclust_otu_picking/final_rep_set.fna
 	
+
+---
+
+qiime_workflow_script restarting in 16S mode
+Thu Jan  1 16:35:48 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m map.mock.15samples.txt -o test_out/split_libraries -q 19 --barcode_type golay_12
+Thu Jan  1 16:35:48 MST 2015
+
+Split libraries command completed.
+Thu Jan  1 16:35:49 MST 2015
+
+---
+
+qiime_workflow_script restarting in 16S mode
+Thu Jan  1 16:38:46 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m map.mock.15samples.txt -o test_out/split_libraries -q 19 --barcode_type golay_12
+Thu Jan  1 16:38:46 MST 2015
+
+Split libraries command completed.
+Thu Jan  1 16:38:46 MST 2015
+
+---
+
+qiime_workflow_script restarting in 16S mode
+Thu Jan  1 16:38:57 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m map.mock.15samples.txt -o test_out/split_libraries -q 19 --barcode_type golay_12
+Thu Jan  1 16:38:57 MST 2015
+
+Split libraries command completed.
+Thu Jan  1 16:38:58 MST 2015
+
+---
+
+qiime_workflow_script restarting in 16S mode
+Thu Jan  1 16:39:19 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m map.mock.15samples.txt -o test_out/split_libraries -q 19 --barcode_type golay_12
+Thu Jan  1 16:39:19 MST 2015
+
+Split libraries command completed.
+Thu Jan  1 16:39:20 MST 2015
+
+---
+
+qiime_workflow_script restarting in 16S mode
+Thu Jan  1 16:40:27 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m map.mock.15samples.txt -o test_out/split_libraries -q 19 --barcode_type golay_12
+Thu Jan  1 16:40:27 MST 2015
+
+Split libraries command completed.
+Thu Jan  1 16:40:28 MST 2015
+
+---
+
+qiime_workflow_script restarting in 16S mode
+Thu Jan  1 16:42:35 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m map.mock.15samples.txt -o test_out/split_libraries -q 19 --barcode_type golay_12
+Thu Jan  1 16:42:35 MST 2015
+
+Split libraries command completed.
+Thu Jan  1 16:42:35 MST 2015
