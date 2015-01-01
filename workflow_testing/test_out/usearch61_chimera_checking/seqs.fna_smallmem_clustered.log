@@ -1,0 +1,68 @@
+usearch_i86linux32 v6.1.544, 4.0Gb RAM (66.0Gb total), 24 cores
+usearch61 --consout /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_consensus_with_abundance.fasta --usersort --maxaccepts 1 --id 0.97 --sizeout --minseqlength 64 --wordlength 8 --uc /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_consensus_with_abundance.uc --cluster_smallmem /home/enggen/github/Qiime_workflow/workflow_testing/test_out/split_libraries/seqs.fna --maxrejects 8 --strand plus --log /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_smallmem_clustered.log 
+Started Thu Jan  1 16:27:46 2015
+
+      Alphabet  nt
+    Word width  8
+     Word ones  8
+        Spaced  No
+        Hashed  No
+         Coded  No
+       Stepped  No
+         Slots  65536 (65.5k)
+       DBAccel  100%
+
+1 secs (00:01)  25Mb Result: 33 clusters, max size 646, avg 97.3
+
+      Seqs  3211
+  Clusters  33
+  Max size  646
+  Avg size  97.3
+  Min size  1
+Singletons  16, 0.5% of seqs, 48.5% of clusters
+   Max mem  25Mb
+      Time  1.00s
+Throughput  3211.0 seqs/sec.
+
+
+              Id      Allocs       Frees     Pct         Bytes
+----------------  ----------  ----------  ------  ------------
+  fastaseqsource           1           0   73.6%          17Mb
+           seqdb          69           0   13.8%         3.2Mb
+      gobuff_hdr           8           0    4.6%         1.1Mb
+           udbio           3           0    3.4%       786.4kb
+          mx_hdr           2           0    1.4%       319.5kb
+         Profile         198           0    0.7%       167.5kb
+         myutils          37           0    0.6%       132.0kb
+         udbdata        1796          70    0.5%       115.1kb
+          hitmgr           5           0    0.3%        69.6kb
+     udbsearcher           1           0    0.3%        65.5kb
+       udbparams           1           0    0.3%        65.5kb
+       hspfinder         199           0    0.2%        46.8kb
+            cons          67          33    0.2%        40.7kb
+          scorer           4           0    0.0%       4096.0b
+      xdpmem_hdr           4           0    0.0%       1334.0b
+    pathinfo_hdr           2           0    0.0%       1270.0b
+         seqinfo           2           0    0.0%       1153.0b
+            Sort         256         248    0.0%       1024.0b
+         chainer          12           9    0.0%        128.0b
+           Other           1           0    0.0%        128.0b
+----------------  ----------  ----------  ------  ------------
+           Total        2668         360  100.0%          23Mb
+
+        25Mb  Curr mem
+        25Mb  Peak mem
+        23Mb  Total alloc
+      29.0kb  Total free
+        23Mb  Net
+       2.6Mb  +Excess
+
+            Type        Busy        Free         Mem   MaxRefCnt        Gets      Allocs       Frees
+----------------  ----------  ----------  ----------  ----------  ----------  ----------  ----------
+         SeqInfo           0           0        0.0b           0
+        PathInfo           0           0        0.0b           0
+     AlignResult           0           0        0.0b           0
+
+Finished Thu Jan  1 16:27:47 2015
+Elapsed time 00:01
+Max memory 25Mb

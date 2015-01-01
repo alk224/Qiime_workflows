@@ -1,0 +1,82 @@
+usearch_i86linux32 v6.1.544, 4.0Gb RAM (66.0Gb total), 24 cores
+usearch61 --mindiffs 3 --uchime_denovo /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_consensus_fixed.fasta --minh 0.28 --xn 8.0 --minseqlength 64 --mindiv 0.8 --abskew 2.0 --dn 1.4 --uchimeout /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_chimeras_denovo.uchime --log /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_chimeras_denovo.log 
+Started Thu Jan  1 16:27:47 2015
+    0.28  minh
+    8.00  xn
+    1.40  dn
+    1.00  xa
+    0.80  mindiv
+    0.75  id
+       2  maxp
+
+Highest-abundance sequences
+    646  centroid=mock.0.rep1_1;size=646
+    629  centroid=mock.0.rep1_3;size=629
+    609  centroid=mock.0.rep1_11;size=609
+    326  centroid=mock.0.rep1_4;size=326
+    266  centroid=mock.0.rep1_0;size=266
+    243  centroid=mock.0.rep1_35;size=243
+    189  centroid=mock.0.rep1_10;size=189
+     86  centroid=mock.0.rep1_6;size=86
+     75  centroid=mock.2b.rep1_2845;size=75
+     58  centroid=mock.2b.rep3_3062;size=58
+     46  centroid=mock.0.rep3_463;size=46
+      7  centroid=mock.0.rep2_255;size=7
+      4  centroid=mock.0.rep3_513;size=4
+      4  centroid=mock.2a.rep1_2237;size=4
+      3  centroid=mock.1a.rep1_643;size=3
+      2  centroid=mock.1a.rep3_1166;size=2
+      2  centroid=mock.0.rep2_347;size=2
+      1  centroid=mock.2a.rep3_2752;size=1
+      1  centroid=mock.2a.rep3_2775;size=1
+      1  centroid=mock.2a.rep1_2243;size=1
+      1  centroid=mock.2a.rep2_2566;size=1
+      1  centroid=mock.0.rep1_180;size=1
+      1  centroid=mock.2b.rep3_3085;size=1
+      1  centroid=mock.0.rep1_193;size=1
+      1  centroid=mock.2b.rep2_2983;size=1
+      1  centroid=mock.1b.rep2_1783;size=1
+      1  centroid=mock.1b.rep2_1803;size=1
+      1  centroid=mock.0.rep2_390;size=1
+      1  centroid=mock.1b.rep2_1750;size=1
+      1  centroid=mock.1b.rep3_2076;size=1
+      1  centroid=mock.0.rep2_274;size=1
+      1  centroid=mock.1b.rep2_1880;size=1
+
+/home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_consensus_fixed.fasta: 16/33 chimeras (48.5%)
+
+              Id      Allocs       Frees     Pct         Bytes
+----------------  ----------  ----------  ------  ------------
+           seqdb          41           1   55.2%         3.2Mb
+      gobuff_hdr           8           0   18.4%         1.1Mb
+           udbio           3           0   13.8%       786.4kb
+          mx_hdr           2           0    5.6%       321.4kb
+         udbdata        1771          77    2.0%       113.6kb
+         myutils           4           0    1.8%       105.5kb
+       udbparams           1           0    1.1%        65.5kb
+     udbsearcher           1           0    1.1%        65.5kb
+       hspfinder         199           0    0.8%        46.8kb
+      xdpmem_hdr           4           0    0.0%       1393.0b
+    pathinfo_hdr           2           0    0.0%       1270.0b
+            Sort         128         120    0.0%        512.0b
+          uchime           3           0    0.0%        268.0b
+         chainer          12           9    0.0%        128.0b
+----------------  ----------  ----------  ------  ------------
+           Total        2179         207  100.0%         5.7Mb
+
+       7.8Mb  Curr mem
+       7.8Mb  Peak mem
+       5.7Mb  Total alloc
+      10.2kb  Total free
+       5.7Mb  Net
+       2.1Mb  +Excess
+
+            Type        Busy        Free         Mem   MaxRefCnt        Gets      Allocs       Frees
+----------------  ----------  ----------  ----------  ----------  ----------  ----------  ----------
+         SeqInfo           0           0        0.0b           0
+        PathInfo           0           0        0.0b           0
+     AlignResult           0           0        0.0b           0
+
+Finished Thu Jan  1 16:27:47 2015
+Elapsed time 00:00
+Max memory 7.8Mb

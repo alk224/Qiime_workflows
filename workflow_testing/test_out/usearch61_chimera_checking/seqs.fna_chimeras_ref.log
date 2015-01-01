@@ -1,0 +1,49 @@
+usearch_i86linux32 v6.1.544, 4.0Gb RAM (66.0Gb total), 24 cores
+usearch61 --mindiffs 3 --uchime_ref /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_consensus_fixed.fasta --minh 0.28 --xn 8.0 --minseqlength 64 --threads 0.0416666666667 --mindiv 0.8 --dn 1.4 --uchimeout /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_chimeras_ref.uchime --strand plus --db /home/enggen/qiime_software/gg_otus-13_8-release/gold.fa --log /home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_chimeras_ref.log 
+Started Thu Jan  1 16:27:47 2015
+    0.28  minh
+    8.00  xn
+    1.40  dn
+    1.00  xa
+    0.80  mindiv
+    0.75  id
+       2  maxp
+
+/home/enggen/github/Qiime_workflow/workflow_testing/test_out/usearch61_chimera_checking/seqs.fna_consensus_fixed.fasta: 14/33 chimeras (42.4%)
+
+              Id      Allocs       Frees     Pct         Bytes
+----------------  ----------  ----------  ------  ------------
+         udbdata       64243           0   49.0%          58Mb
+      gobuff_hdr         152           6   24.0%          28Mb
+         myutils           5           0   13.6%          16Mb
+          mx_hdr          30          10    8.2%         9.7Mb
+          hitmgr          24           0    1.3%         1.6Mb
+     udbsearcher          24           0    1.3%         1.6Mb
+       hspfinder        4778           2    1.1%         1.2Mb
+            Sort         448         256    1.0%         1.2Mb
+           seqdb           8           2    0.1%       124.7kb
+      xdpmem_hdr         106          30    0.1%       106.8kb
+    pathinfo_hdr          48           0    0.1%        91.9kb
+       udbparams           1           0    0.1%        65.5kb
+         chainer         129          57    0.0%       1760.0b
+          uchime           2           0    0.0%        228.0b
+             udb           1           0    0.0%          4.0b
+----------------  ----------  ----------  ------  ------------
+           Total       69999         363  100.0%         118Mb
+
+       320Mb  Curr mem
+       320Mb  Peak mem
+       121Mb  Total alloc
+       3.2Mb  Total free
+       118Mb  Net
+       202Mb  +Excess
+
+            Type        Busy        Free         Mem   MaxRefCnt        Gets      Allocs       Frees
+----------------  ----------  ----------  ----------  ----------  ----------  ----------  ----------
+         SeqInfo           0           0        0.0b           0
+        PathInfo           0           0        0.0b           0
+     AlignResult           0           0        0.0b           0
+
+Finished Thu Jan  1 16:27:49 2015
+Elapsed time 00:02
+Max memory 320Mb

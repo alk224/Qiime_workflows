@@ -1,0 +1,104 @@
+
+---
+
+Phix filtering plus read joining workflow beginning...
+Thu Jan  1 16:27:43 MST 2015
+
+---
+
+Fastq-multx command as issued:
+fastq-multx -m 3 -x -B barcodes.multx.fil index1.mock15.fastq fastq-mcf_out/read1.mcf.fq fastq-mcf_out/read2.mcf.fq -o PhiX_screen/fastq-multx_output/index.%.fq -o PhiX_screen/fastq-multx_output/read1.%.fq -o PhiX_screen/fastq-multx_output/read2.%.fq > PhiX_screen/fastq-multx_output/multx_log.txt
+
+
+Fastq-multx step completed.
+Thu Jan  1 16:27:43 MST 2015
+
+---
+
+Smalt search of demultiplexed data beginning.
+Thu Jan  1 16:27:43 MST 2015
+
+Smalt command as issued:
+smalt map -n 20 -O -f sam:nohead -o PhiX_screen/smalt_output/phix.mapped.sam /home/enggen/PhiX/phix-k11-s1 PhiX_screen/fastq-multx_output/read1.fastq PhiX_screen/fastq-multx_output/read2.fastq
+
+
+Found 6000 total demultiplexed read pairs in your sequence data.
+Your demultiplexed data contains sample data at this percentage: 98 (5923 out of 6000 total read pairs).
+Your demultiplexed data contains PhiX contamination at this percentage: 2 (77 PhiX174-containing read pairs).
+
+PhiX filtering step completed.
+Thu Jan  1 16:27:45 MST 2015
+
+---
+
+Concatenating index reads to forward reads
+Thu Jan  1 16:27:45 MST 2015
+
+Concatenation steps completed.
+Thu Jan  1 16:27:45 MST 2015
+
+---
+
+Fastq-join commands as issued: 
+
+Filtered data:
+fastq-join -p fastq-mcf_out/read1.mcf.fq0 -m 10 -r PhiX_screen/fastq-join_output/fastq-join.report.filtered.log PhiX_screen/fastq-join_output/i1r1.phixfiltered.fq PhiX_screen/smalt_output/read2.phixfiltered.fq -o PhiX_screen/fastq-join_output/phixfiltered.%.fastq
+
+Unfiltered data:
+fastq-join -p fastq-mcf_out/read1.mcf.fq0 -m 10 -r PhiX_screen/fastq-join_output/fastq-join.report.unfiltered.log PhiX_screen/fastq-join_output/i1r1.unfiltered.fq PhiX_screen/smalt_output/read2.phixfiltered.fq -o PhiX_screen/fastq-join_output/unfiltered.%.fastq
+
+Fastq-join results (Filtered data):
+Total reads: 5923
+Total joined: 3358
+Average join len: 49.11
+Stdev join len: 0.31
+
+Fastq-join results (Unfiltered data):
+Total reads: 6000
+Total joined: 3359
+Average join len: 49.13
+Stdev join len: 1.40
+
+Read joining success was achieved at 55 percent (filtered data).
+Read joining success was achieved at 55 percent (unfiltered data).
+
+Fastq-join steps completed
+Thu Jan  1 16:27:45 MST 2015
+
+---
+
+PhiX would have contributed 1 reads (out of 77 total PhiX reads among your demultiplexed data) to your dataset had you joined reads without filtering (an inflation of 0 percent).
+
+You can cautiously estimate sample-to-sample contamination as a result of mixed clusters by dividing 77 into 6000.
+Then subtract OTU counts on a PER SAMPLE basis at the resulting percentage (expressed as a decimal here): .0128333333
+
+To do this, convert your raw biom table (do not even subtract singletons/doubetons yet) to text (see below for instructions specific to qiime 1.8) and manipulate it in a spreadsheet.  For every sample, sum the total sequencing counts.  Multiply this by .0128333333, and subtract this amount from every OTU bin.  Use an if function to set the new count to zero (in a separate worksheet) if the result is negative, and convert the result back to biom
+
+Converting biom to txt:
+biom convert -i otu_table.biom -o otu_table.txt --header-key taxonomy -b
+
+Converting txt to biom:
+biom convert -i filtered_otu_table.txt -o filtered_otu_table.biom --table-type="OTU table" --process-obs-metadata taxonomy
+
+---
+
+Fastx_trimmer commands as issued (filtered data):
+fastx_trimmer -l 12 -i PhiX_screen/fastq-join_output/phixfiltered.join.fastq -o PhiX_screen/idx.filtered.join.fq -Q 33
+fastx_trimmer -f 13 -i PhiX_screen/fastq-join_output/phixfiltered.join.fastq -o PhiX_screen/rd.filtered.join.fq -Q 33
+
+Fastx_trimmer commands as issued (unfiltered data):
+fastx_trimmer -l 12 -i PhiX_screen/fastq-join_output/unfiltered.join.fastq -o PhiX_screen/idx.unfiltered.join.fq -Q 33
+fastx_trimmer -f 13 -i PhiX_screen/fastq-join_output/unfiltered.join.fastq -o PhiX_screen/rd.unfiltered.join.fq -Q 33
+
+Trimming steps completed
+Thu Jan  1 16:27:46 MST 2015
+
+---
+
+Filtering/joining workflow is completed!
+Thu Jan  1 16:27:46 MST 2015
+
+---
+
+
+

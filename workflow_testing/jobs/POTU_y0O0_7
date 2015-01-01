@@ -1,0 +1,5 @@
+  pick_otus.py -i test_out/uclust_otu_picking/step1_otus/POTU_y0O0_/POTU_y0O0_.7.fasta -r /home/enggen/qiime_software/gg_otus-13_8-release/rep_set/91_otus.fasta -m uclust_ref --suppress_new_clusters -o test_out/uclust_otu_picking/step1_otus/POTU_y0O0_ -s 0.97    --max_accepts 1 --max_rejects 8 --stepwords 20 --w 12   
+ mv test_out/uclust_otu_picking/step1_otus/POTU_y0O0_/POTU_y0O0_.7_otus.log test_out/uclust_otu_picking/step1_otus/POTU_y0O0_.7_otus.log
+ mv test_out/uclust_otu_picking/step1_otus/POTU_y0O0_/POTU_y0O0_.7_otus.txt test_out/uclust_otu_picking/step1_otus/POTU_y0O0_.7_otus.txt
+ mv test_out/uclust_otu_picking/step1_otus/POTU_y0O0_/POTU_y0O0_.7_failures.txt test_out/uclust_otu_picking/step1_otus/POTU_y0O0_.7_failures.txt
+ mv test_out/uclust_otu_picking/step1_otus/POTU_y0O0_/POTU_y0O0_.7_clusters.uc test_out/uclust_otu_picking/step1_otus/POTU_y0O0_.7_clusters.uc 

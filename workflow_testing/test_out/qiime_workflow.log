@@ -1,0 +1,31 @@
+qiime_workflow_script beginning in 16S mode
+Thu Jan  1 16:27:43 MST 2015
+
+---
+		
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m map.mock.15samples.txt -o test_out/split_libraries -q 19 --barcode_type golay_12
+Thu Jan  1 16:27:46 MST 2015
+
+Split libraries command completed.
+Thu Jan  1 16:27:46 MST 2015
+Beginning chimera filtering step
+		(Method: usearch61)
+		(Reference: /home/enggen/qiime_software/gg_otus-13_8-release/gold.fa)
+Thu Jan  1 16:27:46 MST 2015
+
+Chimera filtering steps as issued:
+
+identify_chimeric_seqs.py -m usearch61 -i test_out/split_libraries/seqs.fna -r /home/enggen/qiime_software/gg_otus-13_8-release/gold.fa -o test_out/usearch61_chimera_checking
+
+filter_fasta.py -f test_out/split_libraries/seqs.fna -o test_out/split_libraries/seqs_chimera_filtered.fna -s test_out/usearch61_chimera_checking/chimeras.txt -n
+
+
+---
+
+OTU picking command as issued:
+pick_open_reference_otus.py -i test_out/split_libraries/seqs_chimera_filtered.fna -r /home/enggen/qiime_software/gg_otus-13_8-release/rep_set/91_otus.fasta -o test_out/uclust_otu_picking --prefilter_percent_id 0.0 -aO 20 --suppress_align_and_tree --suppress_taxonomy_assignment -p parameters_fast.txt
+	
+Pick representative sequences command as issued:
+pick_rep_set.py	-i test_out/uclust_otu_picking/final_otu_map.txt -f test_out/split_libraries/seqs_chimera_filtered.fna -o test_out/uclust_otu_picking/final_rep_set.fna
+	

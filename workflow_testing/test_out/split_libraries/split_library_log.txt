@@ -1,0 +1,34 @@
+Input file paths
+Mapping filepath: map.mock.15samples.txt (md5: 62b6bfbadb2c6a481df45d58ccf1e356)
+Sequence read filepath: rd.fq (md5: 2792dc4b2f19c3eb60627d5bf4e0dafe)
+Barcode read filepath: idx.fq (md5: 8280dd2b752e4762eef3854c5bf5b2b3)
+
+Quality filter results
+Total number of input sequences: 3358
+Barcode not in mapping file: 0
+Read too short after quality truncation: 33
+Count of N characters exceeds limit: 114
+Illumina quality digit = 0: 0
+Barcode errors exceed max: 0
+
+Result summary (after quality filtering)
+Median sequence length: 253.00
+mock.1a.rep3	278
+mock.1a.rep2	272
+mock.1a.rep1	259
+mock.2a.rep1	241
+mock.1b.rep1	237
+mock.1b.rep2	236
+mock.1b.rep3	229
+mock.0.rep3	217
+mock.2a.rep2	213
+mock.0.rep1	206
+mock.2a.rep3	195
+mock.0.rep2	194
+mock.2b.rep3	159
+mock.2b.rep1	148
+mock.2b.rep2	127
+
+Total number seqs written	3211
+---
+

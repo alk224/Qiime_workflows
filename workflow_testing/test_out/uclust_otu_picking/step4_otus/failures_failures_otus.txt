@@ -1,0 +1,8 @@
+New.CleanUp.ReferenceOTU0	mock.0.rep2_347
+New.CleanUp.ReferenceOTU1	mock.2a.rep3_2752
+New.CleanUp.ReferenceOTU2	mock.2b.rep2_2983
+New.CleanUp.ReferenceOTU3	mock.1b.rep2_1750
+New.CleanUp.ReferenceOTU4	mock.2a.rep2_2566
+New.CleanUp.ReferenceOTU5	mock.2a.rep2_2472
+New.CleanUp.ReferenceOTU6	mock.2b.rep3_3085
+New.CleanUp.ReferenceOTU7	mock.1b.rep3_2076

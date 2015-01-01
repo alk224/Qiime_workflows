@@ -1,0 +1,200 @@
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.0_otus.txt
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.1_otus.txt
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.2_otus.txt
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.3_otus.txt
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.4_otus.txt
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.5_otus.txt
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.6_otus.txt
+OtuPicker parameters:
+Application:uclust
+Similarity:0.97
+chimeras_retention:union
+enable_rev_strand_matching:False
+exact:False
+max_accepts:1
+max_rejects:8
+new_cluster_identifier:denovo
+next_new_cluster_number:1
+optimal:False
+output_dir:test_out/uclust_otu_picking/step3_otus/POTU_yaP1_
+prefilter_identical_sequences:True
+presort_by_abundance:True
+save_uc_files:True
+stable_sort:True
+stepwords:20
+suppress_new_clusters:True
+suppress_sort:True
+word_length:12
+Reference seqs:/home/enggen/github/Qiime_workflow/workflow_testing/test_out/uclust_otu_picking/step2_otus/step2_rep_set.fna
+Num OTUs:0
+Num new OTUs:0
+Num failures:1
+Result path: test_out/uclust_otu_picking/step3_otus/POTU_yaP1_/POTU_yaP1_.7_otus.txt
