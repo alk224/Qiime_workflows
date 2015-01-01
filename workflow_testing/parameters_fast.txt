@@ -1,0 +1,2 @@
+pick_otus:max_accepts	1
+pick_otus:max_rejects	8

@@ -1,0 +1,16 @@
+#SampleID	BarcodeSequence	LinkerPrimerSequence	Community	Plate	Well	BarcodeName	Dilution	Column	Rep	Description
+mock.0.rep1	GAATGATGAGTG	GCC	0	2	B9	806rcbc116	1x	9	1	mock.1x.1
+mock.1a.rep1	ACGGCATGGCAT	TCA	1a	2	C9	806rcbc128	1x	9	1	mock.1x.1
+mock.1b.rep1	CGCCAAATAACC	ATG	1b	2	D9	806rcbc140	1x	9	1	mock.1x.1
+mock.2a.rep1	ATGATGACCCGT	GCC	2a	2	E9	806rcbc152	1x	9	1	mock.1x.1
+mock.2b.rep1	CAGGAAGGTTAA	TCA	2b	2	F9	806rcbc164	1x	9	1	mock.1x.1
+mock.0.rep2	TGGCACCGATTA	ATG	0	2	G9	806rcbc176	1x	9	2	mock.1x.2
+mock.1a.rep2	ACGATGCGACCA	GCC	1a	2	H9	806rcbc188	1x	9	2	mock.1x.2
+mock.1b.rep2	CTTACACCAAGT	TCA	1b	2	A10	806rcbc105	1x	10	2	mock.1x.2
+mock.2a.rep2	CGTCCGAAATAC	ATG	2a	2	B10	806rcbc117	1x	10	2	mock.1x.2
+mock.2b.rep2	CGTGACAATGTC	GCC	2b	2	C10	806rcbc129	1x	10	2	mock.1x.2
+mock.0.rep3	GTATTACGATCC	TCA	0	2	D10	806rcbc141	1x	10	3	mock.1x.3
+mock.1a.rep3	GTGGGATGTTTC	ATG	1a	2	E10	806rcbc153	1x	10	3	mock.1x.3
+mock.1b.rep3	TGGCATACGGCA	GCC	1b	2	F10	806rcbc165	1x	10	3	mock.1x.3
+mock.2a.rep3	CTACCGGATCAA	TCA	2a	2	G10	806rcbc177	1x	10	3	mock.1x.3
+mock.2b.rep3	CCAAGTCTTACA	ATG	2b	2	H10	806rcbc189	1x	10	3	mock.1x.3
