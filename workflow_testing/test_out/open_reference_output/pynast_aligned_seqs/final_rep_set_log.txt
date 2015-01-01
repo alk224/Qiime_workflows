@@ -1,0 +1,121 @@
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+1081058 mock.0.rep1_112	253		146872	98.80	253
+1147446 mock.1a.rep1_820	253		218836	96.80	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+150673 mock.1a.rep3_1166	253		234617	96.40	253
+1523543 mock.1a.rep2_1111	252		108351	96.40	252
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+225284 mock.0.rep1_10	253		167146	100.00	253
+252119 mock.0.rep1_35	253		209188	96.00	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+299943 mock.0.rep1_4	252		108351	97.20	252
+3440955 mock.0.rep1_3	253		10311	95.70	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+366451 mock.0.rep3_537	253		10056	99.60	253
+3773438 mock.0.rep1_1	253		218836	97.60	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+534898 mock.2b.rep3_3164	253		164097	98.80	253
+656881 mock.0.rep1_15	253		164097	99.60	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+776980 mock.0.rep1_42	253		10056	100.00	253
+928538 mock.0.rep1_11	253		146872	100.00	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+New.CleanUp.ReferenceOTU0 mock.0.rep2_347	253		10311	94.10	253
+New.CleanUp.ReferenceOTU1 mock.2a.rep3_2752	253		59998	96.40	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+New.CleanUp.ReferenceOTU2 mock.2b.rep2_2983	253		164097	96.40	253
+New.CleanUp.ReferenceOTU3 mock.1b.rep2_1750	253		4715	97.20	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+New.CleanUp.ReferenceOTU4 mock.2a.rep2_2566	253		219107	96.40	253
+New.CleanUp.ReferenceOTU5 mock.2a.rep2_2472	253		10311	92.90	253
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+candidate sequence ID	candidate nucleotide count	errors	template ID	BLAST percent identity to template	candidate nucleotide count post-NAST
+New.CleanUp.ReferenceOTU6 mock.2b.rep3_3085	253		46527	89.30	253
+New.CleanUp.ReferenceOTU7 mock.1b.rep3_2076	252		104054	95.60	252
+PyNastAligner parameters:
+Algorithm:NAST
+Application:PyNAST
+blast_db:/tmp/core_set_aligned.fasta.imputed
+min_len:189
+min_pct:75.0
+pairwise_alignment_method:uclust
+template_filepath:/home/enggen/qiime_software/core_set_aligned.fasta.imputed

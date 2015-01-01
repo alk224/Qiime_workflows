@@ -1,0 +1,1 @@
+  poller.py -f test_out/open_reference_output/pynast_aligned_seqs/ALIGN_FGI_/expected_out_files.txt -m test_out/open_reference_output/pynast_aligned_seqs/ALIGN_FGI_/merge_map.txt -d test_out/open_reference_output/pynast_aligned_seqs/ALIGN_FGI_/deletion_list.txt -t 60 

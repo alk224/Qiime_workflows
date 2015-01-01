@@ -1,0 +1,4 @@
+  align_seqs.py -d /tmp/core_set_aligned.fasta.imputed -p 75.00 -e 189 -m pynast -t /home/enggen/qiime_software/core_set_aligned.fasta.imputed -a uclust -o test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_ -i test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_/ALIGN_A7m_.3.fasta 
+ mv test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_/ALIGN_A7m_.3_aligned.fasta test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_.3_aligned.fasta
+ mv test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_/ALIGN_A7m_.3_failures.fasta test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_.3_failures.fasta
+ mv test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_/ALIGN_A7m_.3_log.txt test_out/open_reference_output/pynast_aligned_seqs/ALIGN_A7m_.3_log.txt 
