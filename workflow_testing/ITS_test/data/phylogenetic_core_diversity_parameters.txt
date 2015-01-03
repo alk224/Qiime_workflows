@@ -1,0 +1,4 @@
+summarize_taxa:level 2,3,4,5,6,7
+summarize_taxa:absolute_abundance True
+plot_taxa_summary:include_html_counts True
+beta_diversity:metrics abund_jaccard,binary_jaccard,bray_curtis,unweighted_unifrac,weighted_unifrac,binary_chord,chord,hellinger,kulczynski

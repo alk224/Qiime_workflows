@@ -1,0 +1,2 @@
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	5.1009	0.001	999

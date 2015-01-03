@@ -1,0 +1,4 @@
+Taxon	0	1a	1b	2a	2b
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae	834.0	1340.0	1381.0	616.0	493.0
+k__Fungi;p__Ascomycota;c__Saccharomycetes;o__Saccharomycetales;f__Incertae sedis	685.0	1.0	0.0	1140.0	924.0
+k__Fungi;p__Ascomycota;c__Saccharomycetes;o__Saccharomycetales;f__Saccharomycetaceae	95.0	74.0	16.0	81.0	400.0

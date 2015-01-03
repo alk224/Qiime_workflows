@@ -1,0 +1,80 @@
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None
+RdpTaxonAssigner parameters:
+Application:RDP classfier
+Citation:Wang, Q, G. M. Garrity, J. M. Tiedje, and J. R. Cole. 2007. Naive Bayesian Classifier for Rapid Assignment of rRNA Sequences into the New Bacterial Taxonomy. Appl Environ Microbiol. 73(16):5261-7.
+Taxonomy:RDP
+Confidence:0.5
+id_to_taxonomy_filepath:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+id_to_taxonomy_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt
+max_memory:6000M
+reference_sequences_fp:/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta
+training_data_properties_fp:None

@@ -1,0 +1,163 @@
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 17:16:44 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 17:16:44 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 17:26:56 MST 2015
+
+---
+			
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 17:27:11 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 17:27:24 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 17:27:24 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 17:48:40 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 17:48:40 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 17:48:40 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 17:49:53 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 17:49:53 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 17:49:53 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 17:53:56 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 17:53:56 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 17:53:56 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 17:56:42 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 17:56:42 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 17:56:43 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 17:58:23 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 17:58:23 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 17:58:23 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 18:05:23 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 18:05:23 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 18:05:23 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 18:06:00 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 18:06:00 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 18:06:00 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 18:06:30 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 18:06:30 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 18:06:30 MST 2015
+
+---
+
+qiime_workflow_script restarting in ITS mode
+Fri Jan  2 18:12:45 MST 2015
+
+---
+			
+Calling split_libraries_fastq.py:
+split_libraries_fastq.py -i rd.fq -b idx.fq -m data//map.ITS.mock.csv -o data//split_libraries -q 19 --barcode_type golay_12
+Fri Jan  2 18:12:45 MST 2015
+
+Split libraries command completed.
+Fri Jan  2 18:12:45 MST 2015
+
+---
+
+OTU picking command as issued:
+pick_open_reference_otus.py -i data//split_libraries/seqs_rc_ITSx_output/seqs_rc_ITSx_filtered.fna -r /home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta -o data//uclust_otu_picking --prefilter_percent_id 0.0 -aO 20 --suppress_align_and_tree --suppress_taxonomy_assignment -p data//parameters.txt
+	
+Pick representative sequences command as issued:
+pick_rep_set.py	-i data//uclust_otu_picking/final_otu_map.txt -f data//split_libraries/seqs_rc_ITSx_output/seqs_rc_ITSx_filtered.fna -o data//uclust_otu_picking/final_rep_set.fna
+	

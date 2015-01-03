@@ -1,0 +1,276 @@
+<!--
+*Summary of Emperor's Information*
+Command executed on January 02, 2015 at 18:21:43
+Emperor Version: 0.9.3
+QIIME Version: 0.9.3
+HostName: OptimusPrime
+Metadata: /home/enggen/github/Qiime_workflow/workflow_testing/ITS_test/data/map.ITS.mock.csv
+Coordinates: /home/enggen/github/Qiime_workflow/workflow_testing/ITS_test/data/core_diversity_output/005_otu_table/bdiv_even250/abund_jaccard_pc.txt
+Command: /usr/local/bin/make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_emperor_pcoa_plot/ -m map.ITS.mock.csv
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Emperor</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="emperor_required_resources/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="emperor_required_resources/emperor/css/emperor.css">
+    <link rel="stylesheet" type="text/css" href="emperor_required_resources/css/jquery-ui2.css">
+    <link rel="stylesheet" type="text/css" href="emperor_required_resources/css/colorPicker.css">
+    <link rel="stylesheet" type="text/css" href="emperor_required_resources/css/spectrum.css">
+    <link rel="stylesheet" type="text/css" href="emperor_required_resources/css/d3.parcoords.css">
+    <table id="logotable" style="vertical-align:middle;text-align:center;height:100%;width:100%;margin:0;padding:0;border:0;">
+        <tr><td><img src="emperor_required_resources/img/emperor.png" alt="Emperor" id="logo"/></td></tr>
+    </table>
+    <script type="text/javascript" src="emperor_required_resources/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="emperor_required_resources/js/d3.parcoords.js"></script>
+    <script type="text/javascript" src="emperor_required_resources/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="emperor_required_resources/js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="emperor_required_resources/js/jquery.colorPicker.js"></script>
+    <script src="emperor_required_resources/js/spectrum.js"></script>
+
+    <script src="emperor_required_resources/js/Three.js"></script>
+    <script src="emperor_required_resources/js/js/Detector.js"></script>
+    <script src="emperor_required_resources/js/js/RequestAnimationFrame.js"></script>
+    <script src="emperor_required_resources/emperor/js/emperor.js"></script>
+    <script type="text/javascript" src="emperor_required_resources/js/THREEx.screenshot.js"></script>
+    <script type="text/javascript" src="emperor_required_resources/js/FileSaver.min.js"></script>
+    
+    <script type="text/javascript">
+    
+var g_mappingFileHeaders = ['SampleID','LinkerPrimerSequence','Run','Plate','Row','Rep','Community','Description'];
+var g_mappingFileData = { 'mock.1a.rep3': ['mock.1a.rep3','CC','C','2','E','3','1a','mock_1a'],'mock.0.rep2': ['mock.0.rep2','CC','C','2','G','2','0','mock_0'],'mock.1a.rep2': ['mock.1a.rep2','CC','C','2','H','2','1a','mock_1a'],'mock.1a.rep1': ['mock.1a.rep1','CC','C','2','C','1','1a','mock_1a'],'mock.0.rep1': ['mock.0.rep1','CC','C','2','B','1','0','mock_0'],'mock.2a.rep1': ['mock.2a.rep1','CC','C','2','E','1','2a','mock_2a'],'mock.2a.rep2': ['mock.2a.rep2','CC','C','2','B','2','2a','mock_2a'],'mock.0.rep3': ['mock.0.rep3','CC','C','2','D','3','0','mock_0'],'mock.1b.rep2': ['mock.1b.rep2','CC','C','2','A','2','1b','mock_1b'],'mock.1b.rep3': ['mock.1b.rep3','CC','C','2','F','3','1b','mock_1b'],'mock.2a.rep3': ['mock.2a.rep3','CC','C','2','G','3','2a','mock_2a'],'mock.1b.rep1': ['mock.1b.rep1','CC','C','2','D','1','1b','mock_1b'],'mock.2b.rep1': ['mock.2b.rep1','CC','C','2','F','1','2b','mock_2b'],'mock.2b.rep3': ['mock.2b.rep3','CC','C','2','H','3','2b','mock_2b'],'mock.2b.rep2': ['mock.2b.rep2','CC','C','2','C','2','2b','mock_2b'] };
+
+var g_spherePositions = new Array();
+g_spherePositions['mock.1a.rep3'] = { 'name': 'mock.1a.rep3', 'color': 0, 'x': 0.471317, 'y': 0.078550, 'z': 0.051607, 'P1': 0.471317, 'P2': 0.078550, 'P3': 0.051607, 'P4': 0.151475, 'P5': 0.052307 };
+g_spherePositions['mock.0.rep2'] = { 'name': 'mock.0.rep2', 'color': 0, 'x': 0.006276, 'y': -0.135188, 'z': 0.152841, 'P1': 0.006276, 'P2': -0.135188, 'P3': 0.152841, 'P4': -0.004664, 'P5': -0.033696 };
+g_spherePositions['mock.0.rep3'] = { 'name': 'mock.0.rep3', 'color': 0, 'x': 0.010537, 'y': -0.156823, 'z': 0.138165, 'P1': 0.010537, 'P2': -0.156823, 'P3': 0.138165, 'P4': 0.033019, 'P5': -0.031919 };
+g_spherePositions['mock.1a.rep1'] = { 'name': 'mock.1a.rep1', 'color': 0, 'x': 0.446715, 'y': -0.232628, 'z': -0.274777, 'P1': 0.446715, 'P2': -0.232628, 'P3': -0.274777, 'P4': 0.018751, 'P5': 0.011288 };
+g_spherePositions['mock.0.rep1'] = { 'name': 'mock.0.rep1', 'color': 0, 'x': 0.018139, 'y': -0.119890, 'z': 0.139431, 'P1': 0.018139, 'P2': -0.119890, 'P3': 0.139431, 'P4': -0.077389, 'P5': 0.048731 };
+g_spherePositions['mock.2a.rep1'] = { 'name': 'mock.2a.rep1', 'color': 0, 'x': -0.489363, 'y': 0.036399, 'z': -0.025681, 'P1': -0.489363, 'P2': 0.036399, 'P3': -0.025681, 'P4': -0.013128, 'P5': 0.018515 };
+g_spherePositions['mock.2a.rep2'] = { 'name': 'mock.2a.rep2', 'color': 0, 'x': -0.494055, 'y': 0.014834, 'z': -0.022682, 'P1': -0.494055, 'P2': 0.014834, 'P3': -0.022682, 'P4': -0.044985, 'P5': 0.056672 };
+g_spherePositions['mock.2a.rep3'] = { 'name': 'mock.2a.rep3', 'color': 0, 'x': -0.491249, 'y': 0.030163, 'z': -0.022801, 'P1': -0.491249, 'P2': 0.030163, 'P3': -0.022801, 'P4': -0.027330, 'P5': 0.032584 };
+g_spherePositions['mock.1b.rep2'] = { 'name': 'mock.1b.rep2', 'color': 0, 'x': 0.498104, 'y': 0.067994, 'z': -0.005508, 'P1': 0.498104, 'P2': 0.067994, 'P3': -0.005508, 'P4': -0.033851, 'P5': -0.033298 };
+g_spherePositions['mock.1b.rep3'] = { 'name': 'mock.1b.rep3', 'color': 0, 'x': 0.491243, 'y': 0.119647, 'z': -0.031213, 'P1': 0.491243, 'P2': 0.119647, 'P3': -0.031213, 'P4': -0.118446, 'P5': 0.006579 };
+g_spherePositions['mock.1b.rep1'] = { 'name': 'mock.1b.rep1', 'color': 0, 'x': 0.501103, 'y': 0.077993, 'z': -0.009930, 'P1': 0.501103, 'P2': 0.077993, 'P3': -0.009930, 'P4': -0.049766, 'P5': -0.045679 };
+g_spherePositions['mock.1a.rep2'] = { 'name': 'mock.1a.rep2', 'color': 0, 'x': 0.481150, 'y': 0.088775, 'z': 0.039741, 'P1': 0.481150, 'P2': 0.088775, 'P3': 0.039741, 'P4': 0.061788, 'P5': 0.020339 };
+g_spherePositions['mock.2b.rep1'] = { 'name': 'mock.2b.rep1', 'color': 0, 'x': -0.482336, 'y': 0.045711, 'z': -0.045349, 'P1': -0.482336, 'P2': 0.045711, 'P3': -0.045349, 'P4': 0.045304, 'P5': -0.040061 };
+g_spherePositions['mock.2b.rep3'] = { 'name': 'mock.2b.rep3', 'color': 0, 'x': -0.483814, 'y': 0.042358, 'z': -0.041187, 'P1': -0.483814, 'P2': 0.042358, 'P3': -0.041187, 'P4': 0.029436, 'P5': -0.030670 };
+g_spherePositions['mock.2b.rep2'] = { 'name': 'mock.2b.rep2', 'color': 0, 'x': -0.483767, 'y': 0.042104, 'z': -0.042657, 'P1': -0.483767, 'P2': 0.042104, 'P3': -0.042657, 'P4': 0.029788, 'P5': -0.031691 };
+
+var g_ellipsesDimensions = new Array();
+var g_segments = 8, g_rings = 8, g_radius = 0.011942;
+var g_xAxisLength = 0.995158;
+var g_yAxisLength = 0.352275;
+var g_zAxisLength = 0.427618;
+var g_xMaximumValue = 0.501103;
+var g_yMaximumValue = 0.119647;
+var g_zMaximumValue = 0.152841;
+var g_xMinimumValue = -0.494055;
+var g_yMinimumValue = -0.232628;
+var g_zMinimumValue = -0.274777;
+var g_maximum = 0.501103;
+var g_pc1Label = "PC1 (87 %)";
+var g_pc2Label = "PC2 (5 %)";
+var g_pc3Label = "PC3 (5 %)";
+var g_number_of_custom_axes = 0;
+var g_fractionExplained = [0.869820, 0.048904, 0.046271, 0.018081, 0.005926];
+var g_fractionExplainedRounded = [87, 5, 5, 2, 1];
+
+var g_taxaPositions = new Array();
+
+
+var g_vectorPositions = new Array();
+
+var g_comparisonPositions = new Array();
+var g_isSerialComparisonPlot = true;
+document.getElementById("logo").style.display = 'none';
+document.getElementById("logotable").style.display = 'none';
+
+ </script>
+</head>
+
+<body>
+
+<div id="overlay">
+    <div>
+    <img src="emperor_required_resources/img/emperor.png" alt="Emperor" id="smalllogo"/>
+        <h1>WebGL is not enabled!</h1>
+        <p>Emperor's visualization framework is WebGL based, it seems that your system doesn't have this resource available. Here is what you can do:</p>
+        <p id="explanation"><strong>Chrome:</strong> Type "chrome://flags/" into the address bar, then search for "Disable WebGL". Disable this option if you haven't already. <em>Note:</em> If you follow these steps and still don't see an image, go to "chrome://flags/" and then search for "Override software rendering list" and enable this option.</p>
+        <p id="explanation"><strong>Safari:</strong> Open Safari's menu and select Preferences. Click on the advanced tab, and then check "Show Developer" menu. Then open the "Developer" menu and select "Enable WebGL".</p>
+        <p id="explanation"><strong>Firefox:</strong> Go to Options through Firefox > Options or Tools > Options. Go to Advanced, then General. Check "Use hardware acceleration when available" and restart Firefox.</p>
+        <p id="explanation"><strong>Other browsers:</strong> The only browsers that support WebGL are Chrome, Safari, and Firefox. Please switch to these browsers when using Emperor.</p>
+        <p id="explanation"><em>Note:</em> Once you went through these changes, reload the page and it should work!</p>
+        <p id="source">Sources: Instructions for <a href="https://www.biodigitalhuman.com/home/enabling-webgl.html">Chrome and Safari</a>, and <a href="http://www.infewbytes.com/?p=144">Firefox</a></p>
+    </div>
+</div>
+
+<div id="plotToggle">
+    <form>
+      <div id="plottype">
+        <input id="pcoa" type="radio" id="pcoa" name="plottype" checked="checked" /><label for="pcoa">PCoA</label>
+        <input id="parallel" type="radio" id="parallel" name="plottype" /><label for="parallel">Parallel</label>
+      </div>
+    </form>
+</div>
+<div id="pcoaPlotWrapper" class="plotWrapper">
+    <label id="pointCount" class="ontop">
+    </label>
+
+    <div id="finder" class="arrow-right">
+    </div>
+
+    <div id="labels" class="unselectable">
+    </div>
+
+    <div id="taxalabels" class="unselectable">
+    </div>
+
+    <div id="axislabels" class="axislabels">
+    </div>
+
+    <div id="main_plot">
+    </div>
+</div>
+
+<div id="parallelPlotWrapper" class="plotWrapper">
+</div>
+
+<div class="separator" ondblclick="separatorDoubleClick()"></div>
+
+<div id="menu">
+    <div id="menutabs">
+        <ul>
+            <li><a href="#keytab">Key</a></li>
+            <li><a href="#colorby">Colors</a></li>
+            <li><a href="#showby">Visibility</a></li>
+            <li><a href="#scalingby">Scaling</a></li>
+            <li><a href="#labelby">Labels</a></li>
+            <li><a href="#axes">Axes</a></li>
+            <li><a href="#options">Options</a></li>
+        </ul>
+        <div id="keytab">
+            <form name="keyFilter">
+            <label>Filter  </label><input name="filterBox" id="searchBox" type="text" onkeyup="filterKey()"></input>
+            </form>
+            <div id="key">
+            </div>
+        </div>
+        <div id="colorby">
+            <br>
+            <input type="checkbox" onchange="toggleContinuousAndDiscreteColors(this)" id="discreteorcontinuouscolors" name="discreteorcontinuouscolors">  Use gradient colors</input>
+            <br><br>
+            <select id="colorbycombo" onchange="colorByMenuChanged()" size="3">
+            </select>
+            <div class="list" id="colorbylist">
+            </div>
+        </div>
+        <div id="showby" align="center">
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <select id="showbycombo" onchange="showByMenuChanged()">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="list" id="showbylist" style="height:100%;width:100%">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 12px; padding-right:12px;">
+                        <br>
+                        <label for="sphereopacity" class="text">Global Sphere Opacity</label>
+                        <label id="sphereopacity" class="slidervalue"></label>
+                        <div id="sopacityslider" class="slider-range-max"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="scalingby" align="center">
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <select id="scalingbycombo" onchange="scalingByMenuChanged()">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="list" id="scalingbylist" style="height:100%;width:100%">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 12px; padding-right:12px;">
+                        <br>
+                        <label for="sphereradius" class="text">Global Sphere Scale</label>
+                        <label id="sphereradius" class="slidervalue"></label>
+                        <div id="sradiusslider" class="slider-range-max"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="labelby">
+        <div id="labelsTop">
+            <form name="plotoptions">
+            <input type="checkbox" onClick="toggleLabels()">Samples Label Visibility</input>
+            </form>
+            <br>
+            <label for="labelopacity" class="text">Label Opacity</label>
+            <label id="labelopacity" class="slidervalue"></label>
+            <div id="lopacityslider" class="slider-range-max"></div>
+            <div id="labelColorHolder clearfix">
+            <table>
+                <tr><td><div id="labelColor" class="colorbox"></div></td><td><label>Master Label Color</label></td></tr>
+            </table></div>
+        </div>
+            <br>
+            <select id="labelcombo" onchange="labelMenuChanged()">
+            </select>
+            <div class="list" id="labellist">
+            </div>
+        </div>
+        <div id="axes">
+            <div id="pcoaaxes">
+                <div class="list" id="axeslist">
+                </div>
+            </div>
+        </div>
+        <div id="options">
+            <table>
+                <tr><td><div id="axeslabelscolor" class="colorbox" name="axeslabelscolor"></div></td><td title="Axes Labels Color">Axes Labels Color</td></tr>
+                <tr><td><div id="axescolor" class="colorbox" name="axescolor"></div></td><td title="Axes Color Title">Axes Color</td></tr>
+                <tr><td><div id="rendererbackgroundcolor" class="colorbox" name="rendererbackgroundcolor"></div></td><td title="Background Color Title">Background Color</td></tr>
+            </table>
+            <div id="pcoaviewoptions" class="">
+                <form name="settingsoptionscolor">
+                </form>
+                <div id="pcoaoptions" class="">
+                    <form name="settingsoptions">
+                        <input type="checkbox" onchange="toggleScaleCoordinates(this)" id="scale_checkbox" name="scale_checkbox">Scale coords by percent explained</input>
+                    </form>
+                </div>
+                <br><input id="reset" class="button" type="submit" value="Recenter Camera" style="" onClick="resetCamera()">
+                <br><br>
+                <hr class='section-break'>
+                <br>Filename <small>(only letters, numbers, ., - and _)</small>:
+                <br><input name="saveas_name" id="saveas_name" value="screenshot" type="text"/>
+                <br><input id="saveas_legends" class="checkbox" type="checkbox" style=""> Create legend
+                <input id="saveas" class="button" type="submit" value="Save as SVG" style="" onClick="saveSVG()"/>
+                <br><br>For a PNG, simply press 'ctrl+p'.
+                <div id="paralleloptions" class="">
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>  
+</div>
+</body>
+
+</html>

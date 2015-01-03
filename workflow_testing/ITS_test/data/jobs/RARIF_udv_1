@@ -1,0 +1,22 @@
+  single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_1.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_1.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_1.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_2.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_2.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_2.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_3.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_3.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_3.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_4.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_4.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_4.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_5.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_5.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_5.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_6.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_6.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_6.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_7.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_7.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_7.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_8.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_8.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_8.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_9.biom   -d 34 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_34_9.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_34_9.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_58_0.biom   -d 58 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_58_0.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_58_0.biom 
+ single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_58_1.biom   -d 58 
+ mv core_diversity_output//005_otu_table/arare_max250//rarefaction/RARIF_udv_/rarefaction_58_1.biom core_diversity_output//005_otu_table/arare_max250//rarefaction//rarefaction_58_1.biom 

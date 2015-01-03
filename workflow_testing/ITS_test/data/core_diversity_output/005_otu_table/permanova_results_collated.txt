@@ -1,0 +1,46 @@
+
+Category: Community
+Method: abund_jaccard_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	330.6984	0.001	999
+
+Category: Community
+Method: binary_chord_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	5.1009	0.001	999
+
+Category: Community
+Method: binary_jaccard_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	8.0214	0.001	999
+
+Category: Community
+Method: bray_curtis_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	55.8357	0.001	999
+
+Category: Community
+Method: chord_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	57.6850	0.001	999
+
+Category: Community
+Method: hellinger_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	36.4571	0.001	999
+
+Category: Community
+Method: kulczynski_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	55.8357	0.001	999
+
+Category: Community
+Method: unweighted_unifrac_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	17.7778	0.001	999
+
+Category: Community
+Method: weighted_unifrac_dm
+Method name	Pseudo-F statistic	p-value	Number of permutations
+PERMANOVA	116.1437	0.001	999
+

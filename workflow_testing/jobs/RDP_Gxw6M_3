@@ -1,0 +1,4 @@
+ export RDP_JAR_PATH=/home/enggen/qiime_software/rdpclassifier-2.2-release/rdp_classifier-2.2.jar
+  assign_taxonomy.py -m rdp -c 0.50 --rdp_max_memory 6000 -t /home/enggen/qiime_software/gg_otus-13_8-release/taxonomy/91_otu_taxonomy.txt -r /home/enggen/qiime_software/gg_otus-13_8-release/rep_set/91_otus.fasta -o test_out//open_reference_output/rdp_taxonomy_assignment/RDP_Gxw6M_ -i test_out//open_reference_output/rdp_taxonomy_assignment/RDP_Gxw6M_/RDP_Gxw6M_.3.fasta 
+ mv test_out//open_reference_output/rdp_taxonomy_assignment/RDP_Gxw6M_/RDP_Gxw6M_.3_tax_assignments.log test_out//open_reference_output/rdp_taxonomy_assignment/RDP_Gxw6M_.3_tax_assignments.log
+ mv test_out//open_reference_output/rdp_taxonomy_assignment/RDP_Gxw6M_/RDP_Gxw6M_.3_tax_assignments.txt test_out//open_reference_output/rdp_taxonomy_assignment/RDP_Gxw6M_.3_tax_assignments.txt 

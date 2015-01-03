@@ -1,0 +1,127 @@
+Logging started at 18:12:45 on 02 Jan 2015
+QIIME version: 1.8.0
+
+qiime_config values:
+blastmat_dir	/home/enggen/qiime_software/blast-2.2.22-release/data
+sc_queue	all.q
+pynast_template_alignment_fp	/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+cluster_jobs_fp	start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/home/enggen/qiime_software/gg_otus-13_8-release/rep_set/97_otus.fasta
+torque_queue	friendlyq
+template_alignment_lanemask_fp	/home/enggen/qiime_software/lanemask_in_1s_and_0s
+jobs_to_start	1
+cloud_environment	False
+denoiser_min_per_core	50
+python_exe_fp	python
+temp_dir	/tmp/
+blastall_fp	/home/enggen/qiime_software/blast-2.2.22-release/bin/blastall
+seconds_to_sleep	60
+assign_taxonomy_id_to_taxonomy_fp	/home/enggen/qiime_software/gg_otus-13_8-release/taxonomy/97_otu_taxonomy.txt
+
+parameter file values:
+parallel:jobs_to_start	20
+
+Input file md5 sums:
+data//split_libraries/seqs_rc_ITSx_output/seqs_rc_ITSx_filtered.fna: 254a6349165d8885ec156f5211cbe363
+/home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta: 45dcf6a6e99834084e082aab79f7fff3
+
+Executing commands.
+
+# Pick Reference OTUs command 
+parallel_pick_otus_uclust_ref.py -i data//split_libraries/seqs_rc_ITSx_output/seqs_rc_ITSx_filtered.fna -o data//uclust_otu_picking/step1_otus -r /home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta -T --jobs_to_start 20 
+
+Stdout:
+
+Stderr:
+
+# Generate full failures fasta file command 
+filter_fasta.py -f data//split_libraries/seqs_rc_ITSx_output/seqs_rc_ITSx_filtered.fna -s data//uclust_otu_picking/step1_otus/seqs_rc_ITSx_filtered_failures.txt -o data//uclust_otu_picking/step1_otus/failures.fasta
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Pick rep set command 
+pick_rep_set.py -i data//uclust_otu_picking/step1_otus/seqs_rc_ITSx_filtered_otus.txt -o data//uclust_otu_picking/step1_otus/step1_rep_set.fna -f data//split_libraries/seqs_rc_ITSx_output/seqs_rc_ITSx_filtered.fna
+
+Stdout:
+
+Stderr:
+
+# Subsample the failures fasta file using API 
+python -c "import qiime; qiime.util.subsample_fasta('/home/enggen/github/Qiime_workflow/workflow_testing/ITS_test/data/uclust_otu_picking/step1_otus/failures.fasta', '/home/enggen/github/Qiime_workflow/workflow_testing/ITS_test/data/uclust_otu_picking/step1_otus/subsampled_failures.fasta', '0.001000')
+
+"Executing commands.
+
+# Pick de novo OTUs for new clusters command 
+pick_otus.py -i data//uclust_otu_picking/step1_otus/subsampled_failures.fasta -o data//uclust_otu_picking/step2_otus/ -m uclust  --uclust_otu_id_prefix New.ReferenceOTU
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i data//uclust_otu_picking/step2_otus//subsampled_failures_otus.txt -o data//uclust_otu_picking/step2_otus//step2_rep_set.fna -f data//uclust_otu_picking/step1_otus/subsampled_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick reference OTUs using de novo rep set command 
+parallel_pick_otus_uclust_ref.py -i data//uclust_otu_picking/step1_otus/failures.fasta -o data//uclust_otu_picking/step3_otus/ -r data//uclust_otu_picking/step2_otus//step2_rep_set.fna -T --jobs_to_start 20 
+
+Stdout:
+
+Stderr:
+
+# Create fasta file of step3 failures command 
+filter_fasta.py -f data//uclust_otu_picking/step1_otus/failures.fasta -s data//uclust_otu_picking/step3_otus//failures_failures.txt -o data//uclust_otu_picking/step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Pick de novo OTUs on step3 failures command 
+pick_otus.py -i data//uclust_otu_picking/step3_otus//failures_failures.fasta -o data//uclust_otu_picking/step4_otus/ -m uclust  --uclust_otu_id_prefix New.CleanUp.ReferenceOTU
+
+Stdout:
+
+Stderr:
+
+# Merge OTU maps command 
+cat data//uclust_otu_picking/step1_otus/seqs_rc_ITSx_filtered_otus.txt data//uclust_otu_picking/step3_otus//failures_otus.txt data//uclust_otu_picking/step4_otus//failures_failures_otus.txt > data//uclust_otu_picking/final_otu_map.txt
+
+Stdout:
+
+Stderr:
+
+# Pick representative set for subsampled failures command 
+pick_rep_set.py -i data//uclust_otu_picking/step4_otus//failures_failures_otus.txt -o data//uclust_otu_picking/step4_otus//step4_rep_set.fna -f data//uclust_otu_picking/step3_otus//failures_failures.fasta
+
+Stdout:
+
+Stderr:
+
+# Filter singletons from the otu map using API 
+python -c "import qiime; qiime.filter.filter_otus_from_otu_map('/home/enggen/github/Qiime_workflow/workflow_testing/ITS_test/data/uclust_otu_picking/final_otu_map.txt', '/home/enggen/github/Qiime_workflow/workflow_testing/ITS_test/data/uclust_otu_picking/final_otu_map_mc2.txt', '2')"
+
+# Write non-singleton otus representative sequences from step1 to the final rep set file: data//uclust_otu_picking/rep_set.fna
+
+# Copy the full input refseqs file to the new refseq file
+cp /home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta data//uclust_otu_picking/new_refseqs.fna
+
+# Write non-singleton otus representative sequences from step 2 and step 4 to the final representative set and the new reference set (data//uclust_otu_picking/rep_set.fna and data//uclust_otu_picking/new_refseqs.fna respectively)
+
+Executing commands.
+
+# Make the otu table command 
+make_otu_table.py -i data//uclust_otu_picking/final_otu_map_mc2.txt -o data//uclust_otu_picking/otu_table_mc2.biom
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 18:14:42 on 02 Jan 2015

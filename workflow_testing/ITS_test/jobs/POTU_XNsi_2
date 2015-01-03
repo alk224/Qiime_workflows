@@ -1,0 +1,5 @@
+  pick_otus.py -i data//uclust_otu_picking/step1_otus/POTU_XNsi_/POTU_XNsi_.2.fasta -r /home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta -m uclust_ref --suppress_new_clusters -o data//uclust_otu_picking/step1_otus/POTU_XNsi_ -s 0.97    --max_accepts 20 --max_rejects 500 --stepwords 20 --w 12   
+ mv data//uclust_otu_picking/step1_otus/POTU_XNsi_/POTU_XNsi_.2_otus.log data//uclust_otu_picking/step1_otus/POTU_XNsi_.2_otus.log
+ mv data//uclust_otu_picking/step1_otus/POTU_XNsi_/POTU_XNsi_.2_otus.txt data//uclust_otu_picking/step1_otus/POTU_XNsi_.2_otus.txt
+ mv data//uclust_otu_picking/step1_otus/POTU_XNsi_/POTU_XNsi_.2_failures.txt data//uclust_otu_picking/step1_otus/POTU_XNsi_.2_failures.txt
+ mv data//uclust_otu_picking/step1_otus/POTU_XNsi_/POTU_XNsi_.2_clusters.uc data//uclust_otu_picking/step1_otus/POTU_XNsi_.2_clusters.uc 

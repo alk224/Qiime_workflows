@@ -1,0 +1,10 @@
+New.ReferenceOTU0	mock.0.rep1_641	mock.1b.rep1_5021	mock.1b.rep1_4582
+New.ReferenceOTU1	mock.1a.rep2_3540
+New.ReferenceOTU2	mock.1b.rep1_4967
+New.ReferenceOTU3	mock.1a.rep1_2685
+New.ReferenceOTU4	mock.1a.rep2_3100
+New.ReferenceOTU5	mock.2a.rep2_7705
+New.ReferenceOTU6	mock.2a.rep3_8760	mock.2b.rep1_9510
+New.ReferenceOTU7	mock.1b.rep3_6636
+New.ReferenceOTU8	mock.1b.rep1_4723
+New.ReferenceOTU9	mock.0.rep1_727

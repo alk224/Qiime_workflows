@@ -1,0 +1,2 @@
+Taxon	0	1a	1b	2a	2b
+k__Fungi;p__Ascomycota	1614.0	1415.0	1397.0	1837.0	1817.0

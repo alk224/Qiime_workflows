@@ -1,0 +1,2 @@
+mock.1b.rep2_5430|F|ITS1 Extracted ITS1 sequence 1-175 (175 bp)
+mock.2b.rep2_10006|F|ITS1 Extracted ITS1 sequence 1-42 (42 bp)

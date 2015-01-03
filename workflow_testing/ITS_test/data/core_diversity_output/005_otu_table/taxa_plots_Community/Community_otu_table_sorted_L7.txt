@@ -1,0 +1,11 @@
+Taxon	0	1a	1b	2a	2b
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;Other;Other	23.0	55.0	58.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;Other	4.0	1.0	5.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;s__Aspergillus leporis	31.0	27.0	183.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;s__Aspergillus niger	0.0	0.0	0.0	12.0	2.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;s__Aspergillus sp ASR_230	44.0	0.0	0.0	604.0	491.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Paecilomyces;s__Paecilomyces variotii	45.0	287.0	26.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Penicillium;Other	110.0	471.0	49.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__unidentified;s__Trichocomaceae sp	577.0	499.0	1060.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Saccharomycetes;o__Saccharomycetales;f__Incertae sedis;g__Candida;s__Candida albicans	685.0	1.0	0.0	1140.0	924.0
+k__Fungi;p__Ascomycota;c__Saccharomycetes;o__Saccharomycetales;f__Saccharomycetaceae;g__Saccharomyces;s__Saccharomyces cerevisiae	95.0	74.0	16.0	81.0	400.0

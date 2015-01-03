@@ -1,0 +1,31 @@
+Num samples: 15
+Num observations: 22
+Total count: 3183
+Table density (fraction of non-zero values): 0.291
+Table md5 (unzipped): 2528b3a45f1e4a621457580a67f54c77
+
+Counts/sample summary:
+ Min: 127.0
+ Max: 274.0
+ Median: 215.000
+ Mean: 212.200
+ Std. dev.: 41.733
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: taxonomy
+
+Counts/sample detail:
+ mock.2b.rep2: 127.0
+ mock.2b.rep1: 148.0
+ mock.2b.rep3: 159.0
+ mock.0.rep2: 191.0
+ mock.2a.rep3: 191.0
+ mock.0.rep1: 204.0
+ mock.2a.rep2: 213.0
+ mock.0.rep3: 215.0
+ mock.1b.rep3: 228.0
+ mock.1b.rep2: 232.0
+ mock.1b.rep1: 237.0
+ mock.2a.rep1: 239.0
+ mock.1a.rep1: 256.0
+ mock.1a.rep2: 269.0
+ mock.1a.rep3: 274.0

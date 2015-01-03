@@ -1,0 +1,18 @@
+Id	Count	File(s)
+mock.0.rep1	0	PhiX_screen/fastq-multx_output/index1.mock.0.rep1.fq	PhiX_screen/fastq-multx_output/read1.mock.0.rep1.fq	PhiX_screen/fastq-multx_output/read2.mock.0.rep1.fq
+mock.1a.rep1	0	PhiX_screen/fastq-multx_output/index1.mock.1a.rep1.fq	PhiX_screen/fastq-multx_output/read1.mock.1a.rep1.fq	PhiX_screen/fastq-multx_output/read2.mock.1a.rep1.fq
+mock.1b.rep1	0	PhiX_screen/fastq-multx_output/index1.mock.1b.rep1.fq	PhiX_screen/fastq-multx_output/read1.mock.1b.rep1.fq	PhiX_screen/fastq-multx_output/read2.mock.1b.rep1.fq
+mock.2a.rep1	0	PhiX_screen/fastq-multx_output/index1.mock.2a.rep1.fq	PhiX_screen/fastq-multx_output/read1.mock.2a.rep1.fq	PhiX_screen/fastq-multx_output/read2.mock.2a.rep1.fq
+mock.2b.rep1	0	PhiX_screen/fastq-multx_output/index1.mock.2b.rep1.fq	PhiX_screen/fastq-multx_output/read1.mock.2b.rep1.fq	PhiX_screen/fastq-multx_output/read2.mock.2b.rep1.fq
+mock.0.rep2	0	PhiX_screen/fastq-multx_output/index1.mock.0.rep2.fq	PhiX_screen/fastq-multx_output/read1.mock.0.rep2.fq	PhiX_screen/fastq-multx_output/read2.mock.0.rep2.fq
+mock.1a.rep2	0	PhiX_screen/fastq-multx_output/index1.mock.1a.rep2.fq	PhiX_screen/fastq-multx_output/read1.mock.1a.rep2.fq	PhiX_screen/fastq-multx_output/read2.mock.1a.rep2.fq
+mock.1b.rep2	0	PhiX_screen/fastq-multx_output/index1.mock.1b.rep2.fq	PhiX_screen/fastq-multx_output/read1.mock.1b.rep2.fq	PhiX_screen/fastq-multx_output/read2.mock.1b.rep2.fq
+mock.2a.rep2	0	PhiX_screen/fastq-multx_output/index1.mock.2a.rep2.fq	PhiX_screen/fastq-multx_output/read1.mock.2a.rep2.fq	PhiX_screen/fastq-multx_output/read2.mock.2a.rep2.fq
+mock.2b.rep2	0	PhiX_screen/fastq-multx_output/index1.mock.2b.rep2.fq	PhiX_screen/fastq-multx_output/read1.mock.2b.rep2.fq	PhiX_screen/fastq-multx_output/read2.mock.2b.rep2.fq
+mock.0.rep3	0	PhiX_screen/fastq-multx_output/index1.mock.0.rep3.fq	PhiX_screen/fastq-multx_output/read1.mock.0.rep3.fq	PhiX_screen/fastq-multx_output/read2.mock.0.rep3.fq
+mock.1a.rep3	0	PhiX_screen/fastq-multx_output/index1.mock.1a.rep3.fq	PhiX_screen/fastq-multx_output/read1.mock.1a.rep3.fq	PhiX_screen/fastq-multx_output/read2.mock.1a.rep3.fq
+mock.1b.rep3	0	PhiX_screen/fastq-multx_output/index1.mock.1b.rep3.fq	PhiX_screen/fastq-multx_output/read1.mock.1b.rep3.fq	PhiX_screen/fastq-multx_output/read2.mock.1b.rep3.fq
+mock.2a.rep3	0	PhiX_screen/fastq-multx_output/index1.mock.2a.rep3.fq	PhiX_screen/fastq-multx_output/read1.mock.2a.rep3.fq	PhiX_screen/fastq-multx_output/read2.mock.2a.rep3.fq
+mock.2b.rep3	15000	PhiX_screen/fastq-multx_output/index1.mock.2b.rep3.fq	PhiX_screen/fastq-multx_output/read1.mock.2b.rep3.fq	PhiX_screen/fastq-multx_output/read2.mock.2b.rep3.fq
+unmatched	0	PhiX_screen/fastq-multx_output/index1.unmatched.fq	PhiX_screen/fastq-multx_output/read1.unmatched.fq	PhiX_screen/fastq-multx_output/read2.unmatched.fq
+total	15000

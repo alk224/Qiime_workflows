@@ -1,0 +1,16 @@
+#SampleID	BarcodeSequence	LinkerPrimerSequence	Run	Plate	Well	BarcodeName	Row	Rep	Community	Description
+mock.0.rep1	GGCTGTATGGGT	CC	C	2	B9	5.8SLT1bc308	B	1	0	mock_0
+mock.1a.rep1	GATCTTCAGTAC	CC	C	2	C9	5.8SLT1bc320	C	1	1a	mock_1a
+mock.1b.rep1	CGACATGCTATT	CC	C	2	D9	5.8SLT1bc332	D	1	1b	mock_1b
+mock.2a.rep1	TCATCTGACTGA	CC	C	2	E9	5.8SLT1bc344	E	1	2a	mock_2a
+mock.2b.rep1	CTGGTTAATCTG	CC	C	2	F9	5.8SLT1bc356	F	1	2b	mock_2b
+mock.0.rep2	CCTAAGCACATG	CC	C	2	G9	5.8SLT1bc368	G	2	0	mock_0
+mock.1a.rep2	CCAATCACTATG	CC	C	2	H9	5.8SLT1bc380	H	2	1a	mock_1a
+mock.1b.rep2	TCCCAACTTCGC	CC	C	2	A10	5.8SLT1bc297	A	2	1b	mock_1b
+mock.2a.rep2	ATGCGTAGTGCG	CC	C	2	B10	5.8SLT1bc309	B	2	2a	mock_2a
+mock.2b.rep2	TGTACACGGCGA	CC	C	2	C10	5.8SLT1bc321	C	2	2b	mock_2b
+mock.0.rep3	AGGATTACTCCG	CC	C	2	D10	5.8SLT1bc333	D	3	0	mock_0
+mock.1a.rep3	TGTGTGTGACTT	CC	C	2	E10	5.8SLT1bc345	E	3	1a	mock_1a
+mock.1b.rep3	GAGTATGCAGCC	CC	C	2	F10	5.8SLT1bc357	F	3	1b	mock_1b
+mock.2a.rep3	TAATGGAGGAAC	CC	C	2	G10	5.8SLT1bc369	G	3	2a	mock_2a
+mock.2b.rep3	TGTCTTGATAGC	CC	C	2	H10	5.8SLT1bc381	H	3	2b	mock_2b

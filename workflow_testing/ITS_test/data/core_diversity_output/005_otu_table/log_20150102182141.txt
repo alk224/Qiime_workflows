@@ -1,0 +1,508 @@
+Logging started at 18:21:41 on 02 Jan 2015
+QIIME version: 1.8.0
+
+qiime_config values:
+blastmat_dir	/home/enggen/qiime_software/blast-2.2.22-release/data
+sc_queue	all.q
+pynast_template_alignment_fp	/home/enggen/qiime_software/core_set_aligned.fasta.imputed
+cluster_jobs_fp	start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/home/enggen/qiime_software/gg_otus-13_8-release/rep_set/97_otus.fasta
+torque_queue	friendlyq
+template_alignment_lanemask_fp	/home/enggen/qiime_software/lanemask_in_1s_and_0s
+jobs_to_start	1
+cloud_environment	False
+denoiser_min_per_core	50
+python_exe_fp	python
+temp_dir	/tmp/
+blastall_fp	/home/enggen/qiime_software/blast-2.2.22-release/bin/blastall
+seconds_to_sleep	60
+assign_taxonomy_id_to_taxonomy_fp	/home/enggen/qiime_software/gg_otus-13_8-release/taxonomy/97_otu_taxonomy.txt
+
+parameter file values:
+beta_diversity:metrics	abund_jaccard,binary_jaccard,bray_curtis,unweighted_unifrac,weighted_unifrac,binary_chord,chord,hellinger,kulczynski
+plot_taxa_summary:include_html_counts	True
+summarize_taxa:absolute_abundance	True
+summarize_taxa:level	2,3,4,5,6,7
+parallel:jobs_to_start	10
+
+Input file md5 sums:
+open_reference_output/filtered_otu_tables/005_otu_table.biom: 643ed2f93c0f44654e6ab729508d18a6
+map.ITS.mock.csv: 0c644cf52e5a7f5b47e7d47a144e5f5d
+open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre: e6737181ca3454f426216c673b9011a9
+
+Executing commands.
+
+# Generate BIOM table summary command 
+biom summarize-table -i open_reference_output/filtered_otu_tables/005_otu_table.biom -o core_diversity_output//005_otu_table/biom_table_summary.txt --suppress-md5 
+
+Stdout:
+
+Stderr:
+
+# Filter low sequence count samples from table (minimum sequence count: 250) command 
+filter_samples_from_otu_table.py -i open_reference_output/filtered_otu_tables/005_otu_table.biom -o core_diversity_output//005_otu_table/table_mc250.biom -n 250
+
+Stdout:
+
+Stderr:
+
+# Rarify the OTU table to 250 sequences/sample command 
+single_rarefaction.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/table_even250.biom -d 250
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Beta Diversity (abund_jaccard) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics abund_jaccard -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (abund_jaccard) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (abund_jaccard) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, abund_jaccard) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (binary_jaccard) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics binary_jaccard -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (binary_jaccard) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (binary_jaccard) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, binary_jaccard) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (bray_curtis) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics bray_curtis -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (bray_curtis) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (bray_curtis) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, bray_curtis) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (unweighted_unifrac) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics unweighted_unifrac -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (unweighted_unifrac) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (unweighted_unifrac) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, unweighted_unifrac) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (weighted_unifrac) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics weighted_unifrac -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (weighted_unifrac) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (weighted_unifrac) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, weighted_unifrac) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (binary_chord) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics binary_chord -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (binary_chord) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//binary_chord_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//binary_chord_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (binary_chord) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//binary_chord_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//binary_chord_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, binary_chord) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//binary_chord_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//binary_chord_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (chord) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics chord -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (chord) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//chord_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//chord_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (chord) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//chord_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//chord_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, chord) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//chord_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//chord_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (hellinger) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics hellinger -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (hellinger) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//hellinger_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//hellinger_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (hellinger) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//hellinger_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//hellinger_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, hellinger) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//hellinger_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//hellinger_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+# Beta Diversity (kulczynski) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_beta_diversity.py -i core_diversity_output//005_otu_table/table_even250.biom -o core_diversity_output//005_otu_table/bdiv_even250/ --metrics kulczynski -T  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Rename distance matrix (kulczynski) command 
+mv core_diversity_output//005_otu_table/bdiv_even250//kulczynski_table_even250.txt core_diversity_output//005_otu_table/bdiv_even250//kulczynski_dm.txt
+
+Stdout:
+
+Stderr:
+
+# Principal coordinates (kulczynski) command 
+python /usr/local/lib/python2.7/dist-packages/scripts/principal_coordinates.py -i core_diversity_output//005_otu_table/bdiv_even250//kulczynski_dm.txt -o core_diversity_output//005_otu_table/bdiv_even250//kulczynski_pc.txt 
+
+Stdout:
+
+Stderr:
+
+# Make emperor plots, kulczynski) command 
+make_emperor.py -i core_diversity_output//005_otu_table/bdiv_even250//kulczynski_pc.txt -o core_diversity_output//005_otu_table/bdiv_even250//kulczynski_emperor_pcoa_plot/ -m map.ITS.mock.csv 
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Alpha rarefaction command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_multiple_rarefactions.py -T -i core_diversity_output//005_otu_table/table_mc250.biom -m 10 -x 250 -s 24 -o core_diversity_output//005_otu_table/arare_max250//rarefaction/  --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Alpha diversity on rarefied OTU tables command 
+python /usr/local/lib/python2.7/dist-packages/scripts/parallel_alpha_diversity.py -T -i core_diversity_output//005_otu_table/arare_max250//rarefaction/ -o core_diversity_output//005_otu_table/arare_max250//alpha_div/  -t open_reference_output/mafft_aligned_seqs/fasttree_phylogeny.tre --jobs_to_start 10
+
+Stdout:
+
+Stderr:
+
+# Collate alpha command 
+python /usr/local/lib/python2.7/dist-packages/scripts/collate_alpha.py -i core_diversity_output//005_otu_table/arare_max250//alpha_div/ -o core_diversity_output//005_otu_table/arare_max250//alpha_div_collated/ 
+
+Stdout:
+
+Stderr:
+
+# Removing intermediate files command 
+rm -r core_diversity_output//005_otu_table/arare_max250//rarefaction/ core_diversity_output//005_otu_table/arare_max250//alpha_div/
+
+Stdout:
+
+Stderr:
+
+# Rarefaction plot: All metrics command 
+python /usr/local/lib/python2.7/dist-packages/scripts/make_rarefaction_plots.py -i core_diversity_output//005_otu_table/arare_max250//alpha_div_collated/ -m map.ITS.mock.csv -o core_diversity_output//005_otu_table/arare_max250//alpha_rarefaction_plots/ 
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Sort OTU Table command 
+python /usr/local/lib/python2.7/dist-packages/scripts/sort_otu_table.py -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted.biom
+
+Stdout:
+
+Stderr:
+
+# Summarize Taxonomy command 
+python /usr/local/lib/python2.7/dist-packages/scripts/summarize_taxa.py -i core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted.biom -o core_diversity_output//005_otu_table/taxa_plots/ --absolute_abundance --level 2,3,4,5,6,7
+
+Stdout:
+
+Stderr:
+
+# Plot Taxonomy Summary command 
+python /usr/local/lib/python2.7/dist-packages/scripts/plot_taxa_summary.py -i core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted_L2.txt,core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted_L3.txt,core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted_L4.txt,core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted_L5.txt,core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted_L6.txt,core_diversity_output//005_otu_table/taxa_plots/table_mc250_sorted_L7.txt -o core_diversity_output//005_otu_table/taxa_plots//taxa_summary_plots/ --include_html_counts
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Summarize OTU table by Category command 
+python /usr/local/lib/python2.7/dist-packages/scripts/summarize_otu_by_cat.py -m map.ITS.mock.csv -i core_diversity_output//005_otu_table/table_mc250.biom -o core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table.biom -c 'Community' 
+
+Stdout:
+
+Stderr:
+
+# Sort OTU Table command 
+python /usr/local/lib/python2.7/dist-packages/scripts/sort_otu_table.py -i core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table.biom -o core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted.biom
+
+Stdout:
+
+Stderr:
+
+# Summarize Taxonomy command 
+python /usr/local/lib/python2.7/dist-packages/scripts/summarize_taxa.py -i core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted.biom -o core_diversity_output//005_otu_table/taxa_plots_Community/ --absolute_abundance --level 2,3,4,5,6,7
+
+Stdout:
+
+Stderr:
+
+# Plot Taxonomy Summary command 
+python /usr/local/lib/python2.7/dist-packages/scripts/plot_taxa_summary.py -i core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted_L2.txt,core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted_L3.txt,core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted_L4.txt,core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted_L5.txt,core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted_L6.txt,core_diversity_output//005_otu_table/taxa_plots_Community/Community_otu_table_sorted_L7.txt -o core_diversity_output//005_otu_table/taxa_plots_Community//taxa_summary_plots/ --include_html_counts
+
+Stdout:
+
+Stderr:
+
+Executing commands.
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//abund_jaccard_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//binary_jaccard_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//bray_curtis_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//unweighted_unifrac_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//weighted_unifrac_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//binary_chord_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//binary_chord_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//chord_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//chord_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//hellinger_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//hellinger_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Boxplots (Community) command 
+make_distance_boxplots.py -d core_diversity_output//005_otu_table/bdiv_even250//kulczynski_dm.txt -f Community -o core_diversity_output//005_otu_table/bdiv_even250//kulczynski_boxplots/ -m map.ITS.mock.csv -n 999 
+
+Stdout:
+
+Stderr:
+
+# Compare alpha diversity (PD_whole_tree) command 
+compare_alpha_diversity.py -i core_diversity_output//005_otu_table/arare_max250//alpha_div_collated/PD_whole_tree.txt -m map.ITS.mock.csv -c Community -o core_diversity_output//005_otu_table/arare_max250//compare_PD_whole_tree -n 999 
+
+Stdout:
+
+Stderr:
+
+# Compare alpha diversity (observed_species) command 
+compare_alpha_diversity.py -i core_diversity_output//005_otu_table/arare_max250//alpha_div_collated/observed_species.txt -m map.ITS.mock.csv -c Community -o core_diversity_output//005_otu_table/arare_max250//compare_observed_species -n 999 
+
+Stdout:
+
+Stderr:
+
+# Compare alpha diversity (chao1) command 
+compare_alpha_diversity.py -i core_diversity_output//005_otu_table/arare_max250//alpha_div_collated/chao1.txt -m map.ITS.mock.csv -c Community -o core_diversity_output//005_otu_table/arare_max250//compare_chao1 -n 999 
+
+Stdout:
+
+Stderr:
+
+# Group significance (Community) command 
+group_significance.py -i core_diversity_output//005_otu_table/table_even250.biom -m map.ITS.mock.csv -c Community -o core_diversity_output//005_otu_table/group_significance_Community.txt 
+
+Stdout:
+
+Stderr:
+
+# Compress the filtered BIOM table command 
+gzip core_diversity_output//005_otu_table/table_mc250.biom
+
+Stdout:
+
+Stderr:
+
+# Compress the rarified BIOM table command 
+gzip core_diversity_output//005_otu_table/table_even250.biom
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 18:27:28 on 02 Jan 2015

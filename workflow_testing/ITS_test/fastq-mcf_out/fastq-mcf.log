@@ -1,0 +1,40 @@
+Scale used: 2.2
+Phred: 33
+Threshold used: 1 out of 15000
+Adapter 5.8SLT1-1 (AGTGATCCGTTGTTGAAAGTT): counted 2 at the 'end' of 'data//read1.mock.fastq', clip set to 11
+Adapter 5.8SLT1-2 (AGAGATCCGTTGTTGAAAGTT): counted 2 at the 'end' of 'data//read1.mock.fastq', clip set to 11
+Adapter 5.8SLT1-3 (AGTGATCCATTGTTGAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-5 (AGTGATCCGTTGCTGAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-6 (AGAGATCCGTTGCTGAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-7 (AGTGATCCATTGCTGAAAGTT): counted 5 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-8 (AGAGATCCATTGCTGAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-9 (AGTGATCCGTTGTCGAAAGTT): counted 4 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-10 (AGAGATCCGTTGTCGAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-11 (AGTGATCCATTGTCGAAAGTT): counted 2 at the 'end' of 'data//read1.mock.fastq', clip set to 11
+Adapter 5.8SLT1-12 (AGAGATCCATTGTCGAAAGTT): counted 2 at the 'end' of 'data//read1.mock.fastq', clip set to 11
+Adapter 5.8SLT1-13 (AGTGATCCGTTGCCGAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-15 (AGTGATCCATTGCCGAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-16 (AGAGATCCATTGCCGAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-17 (AGTGATCCGTTGTTAAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-18 (AGAGATCCGTTGTTAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-19 (AGTGATCCATTGTTAAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-20 (AGAGATCCATTGTTAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-21 (AGTGATCCGTTGCTAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-22 (AGAGATCCGTTGCTAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-23 (AGTGATCCATTGCTAAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-24 (AGAGATCCATTGCTAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-25 (AGTGATCCGTTGTCAAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-26 (AGAGATCCGTTGTCAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-27 (AGTGATCCATTGTCAAAAGTT): counted 4 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-28 (AGAGATCCATTGTCAAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter 5.8SLT1-29 (AGTGATCCGTTGCCAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-30 (AGAGATCCGTTGCCAAAAGTT): counted 2 at the 'end' of 'data//read1.mock.fastq', clip set to 11
+Adapter 5.8SLT1-31 (AGTGATCCATTGCCAAAAGTT): counted 1 at the 'end' of 'data//read1.mock.fastq', clip set to 12
+Adapter 5.8SLT1-32 (AGAGATCCATTGCCAAAAGTT): counted 3 at the 'end' of 'data//read1.mock.fastq', clip set to 10
+Adapter ITS4mod-1 (ATTTAAGCATATCAATAAGCGGAGGCT): counted 15 at the 'end' of 'data//read2.mock.fastq', clip set to 8
+Adapter ITS4mod-2 (ACTTAAGCATATCAATAAGCGGAGGCT): counted 86 at the 'end' of 'data//read2.mock.fastq', clip set to 6
+Files: 2
+Total reads: 15000
+Too short after clip: 0
+Clipped 'end' reads (data//read1.mock.fastq): Count 107, Mean: 235.61, Sd: 51.10
+Clipped 'end' reads (data//read2.mock.fastq): Count 105, Mean: 239.38, Sd: 43.34

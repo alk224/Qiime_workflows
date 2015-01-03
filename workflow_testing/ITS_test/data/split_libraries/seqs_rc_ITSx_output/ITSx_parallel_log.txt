@@ -1,0 +1,32 @@
+
+---
+
+Parallel ITSx script starting...
+Fri Jan  2 18:07:40 MST 2015
+
+---
+
+file splitting achieved
+Fri Jan  2 18:07:41 MST 2015
+
+---
+
+parallel ITSx processing completed
+Fri Jan  2 18:09:38 MST 2015
+
+---
+
+---
+
+List of output files 
+(in this output directory seqs_rc_ITSx_output)
+(* = chosen naming convention seqs_rc):
+
+ 1. *_ITSx_filtered.seqids.txt: list of sequence identifiers found within the filtered fasta with complete sequences
+ 2. *_ITSx_filtered.fna: original fasta file, filtered according to sequence ids within the no_detections file
+ 3. *_ITS1.seqids.txt: list of sequence identifiers found within the ITS1 fasta file
+ 4. *_ITS1only.fasta: fasta file containing only ITS1 sequences from input file
+ 5. *_ITS2.seqids.txt: list of sequence identifiers found within the ITS2 fasta file
+ 6. *_ITS2only.fasta: fasta file containing only ITS2 sequences from input file
+ 7. *_no_detections.txt: List of sequence identifiers that failed to match ITS HMMer profiles.
+

@@ -1,0 +1,3 @@
+Taxon	mock.0.rep1	mock.0.rep2	mock.0.rep3	mock.1a.rep1	mock.1a.rep2	mock.1a.rep3	mock.1b.rep1	mock.1b.rep2	mock.1b.rep3	mock.2a.rep1	mock.2a.rep2	mock.2a.rep3	mock.2b.rep1	mock.2b.rep2	mock.2b.rep3
+k__Fungi;p__Ascomycota;c__Eurotiomycetes	302.0	267.0	265.0	481.0	401.0	458.0	433.0	470.0	478.0	249.0	147.0	220.0	174.0	164.0	155.0
+k__Fungi;p__Ascomycota;c__Saccharomycetes	283.0	222.0	275.0	29.0	22.0	24.0	5.0	5.0	6.0	361.0	482.0	378.0	422.0	450.0	452.0

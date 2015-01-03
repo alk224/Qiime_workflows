@@ -1,0 +1,2 @@
+Taxon	mock.0.rep1	mock.0.rep2	mock.0.rep3	mock.1a.rep1	mock.1a.rep2	mock.1a.rep3	mock.1b.rep1	mock.1b.rep2	mock.1b.rep3	mock.2a.rep1	mock.2a.rep2	mock.2a.rep3	mock.2b.rep1	mock.2b.rep2	mock.2b.rep3
+k__Fungi;p__Ascomycota	585.0	489.0	540.0	510.0	423.0	482.0	438.0	475.0	484.0	610.0	629.0	598.0	596.0	614.0	607.0

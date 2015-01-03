@@ -1,0 +1,34 @@
+Input file paths
+Mapping filepath: data//map.ITS.mock.csv (md5: 0c644cf52e5a7f5b47e7d47a144e5f5d)
+Sequence read filepath: rd.fq (md5: 9917f2e38b4d30b122dd816c30c38e9a)
+Barcode read filepath: idx.fq (md5: cad5198868c2f7c26a8ec048d6d25efe)
+
+Quality filter results
+Total number of input sequences: 14
+Barcode not in mapping file: 0
+Read too short after quality truncation: 3
+Count of N characters exceeds limit: 0
+Illumina quality digit = 0: 0
+Barcode errors exceed max: 0
+
+Result summary (after quality filtering)
+Median sequence length: 404.00
+mock.2b.rep3	11
+mock.2b.rep2	0
+mock.2b.rep1	0
+mock.2a.rep3	0
+mock.2a.rep2	0
+mock.2a.rep1	0
+mock.1b.rep3	0
+mock.1b.rep2	0
+mock.1b.rep1	0
+mock.1a.rep3	0
+mock.1a.rep2	0
+mock.1a.rep1	0
+mock.0.rep3	0
+mock.0.rep2	0
+mock.0.rep1	0
+
+Total number seqs written	11
+---
+

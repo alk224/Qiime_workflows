@@ -1,0 +1,5 @@
+  pick_otus.py -i data//uclust_otu_picking/step3_otus/POTU_QQ4r_/POTU_QQ4r_.7.fasta -r data//uclust_otu_picking/step2_otus//step2_rep_set.fna -m uclust_ref --suppress_new_clusters -o data//uclust_otu_picking/step3_otus/POTU_QQ4r_ -s 0.97    --max_accepts 20 --max_rejects 500 --stepwords 20 --w 12   
+ mv data//uclust_otu_picking/step3_otus/POTU_QQ4r_/POTU_QQ4r_.7_otus.log data//uclust_otu_picking/step3_otus//POTU_QQ4r_.7_otus.log
+ mv data//uclust_otu_picking/step3_otus/POTU_QQ4r_/POTU_QQ4r_.7_otus.txt data//uclust_otu_picking/step3_otus//POTU_QQ4r_.7_otus.txt
+ mv data//uclust_otu_picking/step3_otus/POTU_QQ4r_/POTU_QQ4r_.7_failures.txt data//uclust_otu_picking/step3_otus//POTU_QQ4r_.7_failures.txt
+ mv data//uclust_otu_picking/step3_otus/POTU_QQ4r_/POTU_QQ4r_.7_clusters.uc data//uclust_otu_picking/step3_otus//POTU_QQ4r_.7_clusters.uc 

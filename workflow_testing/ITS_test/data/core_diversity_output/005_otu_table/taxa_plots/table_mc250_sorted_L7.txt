@@ -1,0 +1,11 @@
+Taxon	mock.0.rep1	mock.0.rep2	mock.0.rep3	mock.1a.rep1	mock.1a.rep2	mock.1a.rep3	mock.1b.rep1	mock.1b.rep2	mock.1b.rep3	mock.2a.rep1	mock.2a.rep2	mock.2a.rep3	mock.2b.rep1	mock.2b.rep2	mock.2b.rep3
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;Other;Other	7.0	7.0	9.0	19.0	12.0	24.0	11.0	26.0	21.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;Other	0.0	0.0	4.0	0.0	0.0	1.0	0.0	1.0	4.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;s__Aspergillus leporis	9.0	14.0	8.0	7.0	6.0	14.0	52.0	43.0	88.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;s__Aspergillus niger	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	3.0	0.0	9.0	1.0	1.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Aspergillus;s__Aspergillus sp ASR_230	15.0	15.0	14.0	0.0	0.0	0.0	0.0	0.0	0.0	246.0	147.0	211.0	173.0	163.0	155.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Paecilomyces;s__Paecilomyces variotii	10.0	24.0	11.0	102.0	107.0	78.0	7.0	9.0	10.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__Penicillium;Other	32.0	31.0	47.0	142.0	114.0	215.0	16.0	11.0	22.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Eurotiomycetes;o__Eurotiales;f__Trichocomaceae;g__unidentified;s__Trichocomaceae sp	229.0	176.0	172.0	211.0	162.0	126.0	347.0	380.0	333.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Fungi;p__Ascomycota;c__Saccharomycetes;o__Saccharomycetales;f__Incertae sedis;g__Candida;s__Candida albicans	255.0	193.0	237.0	1.0	0.0	0.0	0.0	0.0	0.0	324.0	467.0	349.0	271.0	313.0	340.0
+k__Fungi;p__Ascomycota;c__Saccharomycetes;o__Saccharomycetales;f__Saccharomycetaceae;g__Saccharomyces;s__Saccharomyces cerevisiae	28.0	29.0	38.0	28.0	22.0	24.0	5.0	5.0	6.0	37.0	15.0	29.0	151.0	137.0	112.0

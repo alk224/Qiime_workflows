@@ -1,0 +1,3 @@
+CogentAligner parameters:
+Method:mafft
+Module:<module 'cogent.app.mafft' from '/usr/local/lib/python2.7/dist-packages/cogent/app/mafft.pyc'>

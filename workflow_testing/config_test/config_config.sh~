@@ -1,19 +1,104 @@
 #!/bin/bash
 
-# for loop
-#for line in `cat dummy_config | grep -v "#"`; do
-#line=`grep "Max_mismatch" dummy_config | grep -v "#"`
-for line in `grep -v "#" dummy_config | grep -E ^.*$`; do
-	echo $line
-	field=`echo $line | sed 's/^.*\t//'`
-	setting=`echo $line | sed 's/\t.*$//'`
-	echo "field is $field"
-	echo "setting is $setting
+## Utility to configure the config file required for my qiime workflow to function nicely
+
+## Needs help info and usage still...
+
+## Set working directory
+	workdir=(`pwd`)
+
+## Check for config file (current directory only for now)
+
+configsearch=(`ls qiime_workflow*config 2>/dev/null`)
+echo $configsearch
+if [[ ! -f $configsearch ]]; then
+	echo "		No config file detected in local directory.
+		Shall I create one for you (yes or no)?"
+		read yesno
+	
+		if [[ ! $yesno == "yes" && ! $yesno == "no" ]]; then
+		echo "		Invalid entry.  Yes or no only."
+		read yesno
+		if [[ ! $yesno == "yes" && ! $yesno == "no" ]]; then
+		echo "		Invalid entry.  Exiting.
+		"
+		exit 1
+		fi
+		fi
+
+		if [[ $yesno == "yes" ]]; then
+		echo "		OK.  Creating workflow file in your current
+		directory.
+		($workdir/qiime_workflow.config)
+		"
+		cat blank_config.config > $workdir/qiime_workflow.config
+		configfile=($workdir/qiime_workflow.config)
+		fi
+
+		if [[ $yesno == "no" ]]; then
+		echo "		OK.  Please enter the path of the
+		config file you want to update.
+		"
+		read -e configfile
+		fi
+	else
+	foundconfig=(`ls qiime_workflow*config 2>/dev/null`)
+	echo "		Found config file."
+	echo "		$workdir/$foundconfig
+	"
+	sleep 1
+	configfile=($workdir/$foundconfig)
+fi
+	echo "		Reading configurable fields...
+	"
+	sleep 1
+	cat $configfile | grep -v "#" | grep -E -v '^$'
+
+	echo "
+		I will now go through each configurable field and require
+		your input.  Press enter to retain the current value or 
+		enter a new value.  When entering paths (say to gg database)
+		remember to use tab-autocomplete to avoid errors.
 	"
 
 
 
+for field in `grep -v "#" $configfile | cut -f 1`; do
+
+	echo "		Field: $field"
+	setting=`grep $field $configfile | grep -v "#" | cut -f 2`
+	echo "		Current setting is: $setting
+		Enter new value (or press enter to keep current setting):
+	"
+	read -e newsetting
+	if [[ ! -z "$newsetting" ]]; then
+	sed -i -e "s@^$field\t$setting@$field\t$newsetting@" $configfile
+	echo "		Setting changed.
+	"
+	else
+	echo "		Setting unchanged.
+	"
+	fi
 done
+
+
+
+
+
+
+
+
+
+## original attempt
+#for line in `grep -v "#" dummy_config | grep -E "^.*$"`; do
+#	echo $line
+#	field=`echo $line | sed 's/^.*\t//'`
+#	setting=`echo $line | sed 's/\t.*$//'`
+#	echo "field is $field"
+#	echo "setting is $setting
+#	"
+#
+#done
 
 # find and replace command that works.  Need to integrate this into a for loop
 #  sed -ri 's/^Threads_mcf.*/Threads_mcf\t20/' dummy_config 

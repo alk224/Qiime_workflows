@@ -1,0 +1,4 @@
+ export RDP_JAR_PATH=/home/enggen/qiime_software/rdpclassifier-2.2-release/rdp_classifier-2.2.jar
+  assign_taxonomy.py -m rdp -c 0.50 --rdp_max_memory 6000 -t /home/enggen/qiime_software/UNITE/full_UNITE_final/sh_taxonomy_qiime_ver6_dynamic_10.09.2014.clean.txt -r /home/enggen/qiime_software/UNITE/full_UNITE_final/sh_refs_qiime_ver6_dynamic_10.09.2014.fasta -o data//open_reference_output/rdp_taxonomy_assignment/RDP_wrWLR_ -i data//open_reference_output/rdp_taxonomy_assignment/RDP_wrWLR_/RDP_wrWLR_.1.fasta 
+ mv data//open_reference_output/rdp_taxonomy_assignment/RDP_wrWLR_/RDP_wrWLR_.1_tax_assignments.log data//open_reference_output/rdp_taxonomy_assignment/RDP_wrWLR_.1_tax_assignments.log
+ mv data//open_reference_output/rdp_taxonomy_assignment/RDP_wrWLR_/RDP_wrWLR_.1_tax_assignments.txt data//open_reference_output/rdp_taxonomy_assignment/RDP_wrWLR_.1_tax_assignments.txt 

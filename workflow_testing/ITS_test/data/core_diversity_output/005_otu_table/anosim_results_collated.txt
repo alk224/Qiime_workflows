@@ -1,0 +1,46 @@
+
+Category: Community
+Method: abund_jaccard_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.8556	0.001	999
+
+Category: Community
+Method: binary_chord_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.9296	0.001	999
+
+Category: Community
+Method: binary_jaccard_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.9319	0.001	999
+
+Category: Community
+Method: bray_curtis_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.9348	0.001	999
+
+Category: Community
+Method: chord_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.9570	0.001	999
+
+Category: Community
+Method: hellinger_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.9170	0.001	999
+
+Category: Community
+Method: kulczynski_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.9348	0.001	999
+
+Category: Community
+Method: unweighted_unifrac_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.8267	0.001	999
+
+Category: Community
+Method: weighted_unifrac_dm
+Method name	R statistic	p-value	Number of permutations
+ANOSIM	0.9526	0.001	999
+
